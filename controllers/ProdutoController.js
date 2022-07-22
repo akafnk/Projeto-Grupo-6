@@ -1,6 +1,6 @@
 const produtoController = {
     verProduto:(req,res)=>{
-        res.send("Vendo os Produtos");
+        res.render("pg-produtos");
     }
 }
 
