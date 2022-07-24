@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.hamburguer{
+   height: 100%;
+   display: flex;
+   align-items: center;
+   margin-left: -40px;
+}
+#checkbox-menu{
+   position: absolute;
+   opacity: 0;
+}
+header div label{
+   cursor: pointer;
+   position: relative;
+   display:block;
+   height: 22px;
+   width: 30px;
+}
+header div label span{
+   position: absolute;
+   display: block;
+   height: 5px;
+   width: 100%;
+   border-radius: 30px;
+   background-color: white;
+   transition: 0,25s ease-in-out;
+}
+label span:nth-child(1){
+   top:0;
+}
+label span:nth-child(2){
+   top:8px;
+}
+label span:nth-child(3){
+   top:16px;
+}
+#checkbox-menu:checked + label span:nth-child(1){
+   transform: rotate(-45deg);
+   top:8px;
+}
+#checkbox-menu:checked + label span:nth-child(2){ 
+   opacity: 0;
+
+}
+#checkbox-menu:checked + label span:nth-child(3){
+   transform: rotate(45deg);
+   top:8px;
+}
+
+
+.cabecalho{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size:14px;
+    background-color: black;
+   color: aliceblue;
+   height: 80px;
+   width: 100%;
+   font-weight: bold;
+}
+
+
+
+.lista{
+display: flex;
+justify-content: space-between;
+    font-weight: bold;
+    width: 20%;
+}
+
+
+.sacola{
+display:flex;
+justify-content: space-between;
+  font-size: 12px;  
+ }
+
+ .secao{
+    margin-left: 21px;
+    margin-top: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #828282;
+ }
+
+ .secoes{
+     display:flex;
+justify-content: space-between;
+margin-left: 10px;
+ }
+
+ .checkbox{
+    font-family: 'Roboto', sans-serif;
+ }
+
+ .filtro{
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 10px;
+ }
+
+ .titulofiltro{
+    font-family: 'oswald', sans-serif;
+ }
+
+ select{
+     width:150px;
+     
+ }
+
+ .px{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    
+ }
+
+ .px2{
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
+ }
+
+
+.cxpai{
+    display:flex;
+    justify-content: space-around;
+    margin-right: 10px; 
+    font-family: 'oswald', sans-serif;
+}
+
+ .caixinhas{
+     border:1px solid gray;
+     width:30px;
+     height:30px;
+text-align: center;
+padding: 5px;
+margin-bottom: 2px;
+margin-right: 2px;
+ }
+
+ 
+
+ .cxcores1{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color: #292A2D;
+     margin-bottom: 5px;
+ }
+
+ .cxcores2{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color: #F3ECE2 ;
+     margin-bottom: 5px;
+ }
+
+ .cxcores3{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color: #24426A ;
+     
+ }
+
+
+
+ .cxcores4{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color: #18574A ;
+     margin-bottom: 5px;
+ }
+
+ 
+
+ .cxcores5{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color:#666689;
+     margin-bottom: 5px;
+ }
+
+ .cxcores6{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color: #C2BEB6 ;
+ }
+
+ .cxcores7{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color: #AAABA7 ;
+     margin-bottom: 5px;
+ }
+
+ .cxcores8{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color: #971E34 ;
+     margin-bottom: 5px;
+ }
+
+ .cxcores9{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color: #CBA13E ;
+ }
+
+ .cxcores10{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color: #73513C ;
+     margin-bottom: 5px;
+ }
+
+ .cxcores11{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color: #DAB1B1 ;
+     margin-bottom: 5px;
+ }
+
+ .cxcores12{
+    border:1px solid black;
+    width:20px;
+     height:20px;
+     background-color: #2B9FA7 ;
+ }
+
+ .pecasPai{
+    
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width:80%;
+
+ }
+
+ 
+
+ .fotosPecas{
+     width: 250px;
+     height:300px;
+ }
+
+ .linha1{
+font-family: 'Roboto', sans-serif;
+color: #BDBDBD;
+font-size: 8px;
+font-weight: bold;
+margin-bottom: 3px;
+ }
+
+ .linha2{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 10px;
+    margin-bottom:5px;
+    
+ }
+
+ section article {
+    margin-bottom: 10px;
+ }
+
+ .precosPecas{
+font-family: 'Oswald', sans-serif; 
+
+ }
+
+ .rodape{
+   display: flex;
+   justify-content: space-around;
+   background-color: #202020;
+   font-family: 'Oswald', sans-serif;
+   color:white;
+   height: 380px;
+   width: 100%;
+   line-height: 25px;
+   font-size: 10px;
+   margin-top: 20px;
+}
+.textos{
+   font-family: 'Roboto', sans-serif;
+   color:rgba(130, 130, 130, 1);
+   font-size:9px;
+   list-style: none;
+}
+.tex{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   list-style: none;
+   font-family: 'Roboto', sans-serif;
+   color:rgba(130, 130, 130, 1);
+}
+.caixa-fo1{
+   display: flex;
+   flex-direction: column;
+   margin-left: 10px;
+   margin-right: 10px; 
+   margin-top: 80px; 
+   width: 9%;
+}
+.caixa-fo2{
+   display: flex;
+   flex-direction: column;
+   margin-top: 80px;
+   margin-left: 15px;
+   margin-right: 10px;
+}
+.caixa-fo3{
+   display: flex;
+   flex-direction: column;
+   margin-top: 80px;
+   align-items: center;
+   margin-left: 20px;
+}
+.caixa-fo4{
+   display: flex;
+   flex-direction: column;
+   margin-left: -10px;
+   margin-top: 80px;
+  align-items: center;
+  width: 22%;
+}
+.logo-fo{
+   display: flex;
+   align-items: center;    
+}
+.logo-redes{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top:20px
+}
+.formulario{
+   display: flex;
+   flex-direction: column;
+   margin-top: 60px;
+   align-items: center;
+}
+form input{
+   width: 40%px;
+   height: 23px;
+   background-color: black;
+   border: solid 1px white;
+   margin-top: 15px;
+}
+footer form button{
+   width: 80%;
+   height: 23px;
+   margin-top: 15px;
+
+}
+
