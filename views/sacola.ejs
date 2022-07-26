@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/sacola.css">
+    <title>SACOLA DE COMPRAS</title>
+</head>
+<body> 
+    <section class="caixaPrincipal">
+            <div class="caixaProduto">
+                <div class="linhasItens">
+                    <div class="produtos1"> PRODUTOS </div>
+                    <div class="preco1"> PREÇO </div>
+                    <div class="quantidade1"> QUANTIDADE </div>
+                    <div class="total1"> TOTAL </div>
+                </div>
+                <div class="primeiraLinha">
+                    <div class="imagemProduto">
+                        <img width="150px" src="./img/5.jpg">
+                    </div>
+                    <div class="nomeProduto">
+                        <p>Blusão sublimado urban - Brava</p>
+                    </div>
+                    <div class="valorProduto">
+                        <p>R$ 50,00</p>
+                    </div>
+                    <div class="quantidadeProduto" >
+                        <p> 0 </p>
+                    </div>
+                    <div class="valorTotalProduto">
+                        <p> R$ 50,00 </p>
+                    </div>
+                    <div class="remover">
+                        <p> x </p>
+                    </div>
+                </div>
+                <div class="classeBotao">
+                <button class="botaoContinuarComprando"> CONTINUAR COMPRANDO </button>
+                </div>
+            </div>
+            <div class="boxFinalizar">
+                <div class="frete">
+                    <h2> <b> FRETE: </b> </h2>
+                    <br>
+                    <h3> Digite seu CEP para calcular o valor do frete: </h3>
+                    <br>
+                    <form>
+                        <label for="cep"> CEP: </label>
+                        <input class="inputCep" type="number" name="cep" id="cep" required>
+                        <button class="botaoConsultar"> CONSULTAR </button>
+                    </form>
+                </div>
+                <div class="total"> 
+                    <h2> TOTAL:</h2> 
+                    <br>
+                    <div class="valorDoPedido"> 
+                    <p> VALOR DO PEDIDO: </p>
+                    <p> R$ 50,00 </p> 
+                    </div>
+                    <div class="valorDoFrete"> 
+                    <p> FRETE: </p>
+                    <p> R$ 0,00 </p>
+                    </div>
+                    <div class="valorTotal"> 
+                    <p> <b>VALOR TOTAL: </b></p>
+                    <p> R$ 50,00 </p>
+                    </div>
+                    <br><br>
+                    <button class="botaoFinalizar" type="submit"> <b>Finalizar Compra</b> </button>
+                </div>
+            
+            </div>
+            </div>
+    </section>
+</body>
+</html>

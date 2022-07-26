@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald;
+}
+
+body{
+    background-color: rgba(234, 231, 231, 0.936);
+
+}
+
+.containerPai{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.primeiraColuna{
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px ;
+    flex-direction: column;
+}
+
+.dadosPessoais{
+    width: 180%;
+    height: 545px;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid rgb(223, 223, 223);
+    color: rgb(96, 96, 96);
+    font-size: 18px;
+    max-width: 200%;
+    position: relative;
+    
+}
+
+.dadosEndereco{
+    margin-top: 50px;
+    width: 180%;
+    height: 520px;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid rgb(223, 223, 223);
+    color: rgb(96, 96, 96);
+    font-size: 18px;
+}
+
+.segundaColuna{
+    margin-bottom: 50px ;
+    margin-top: 100px;
+}
+
+
+.opcoesDeEntrega{
+    width: 200%;
+    height: 250px;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid rgb(223, 223, 223);
+    color: rgb(96, 96, 96);
+}
+
+.dadosPagamento{
+    margin-top: 50px;
+    width: 200%;
+    height: 450px;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid rgb(223, 223, 223);
+    color: rgb(96, 96, 96);
+
+}
+.terceiraColuna{
+    margin-bottom: 50px ;
+    margin-top: 100px;
+}
+
+.resumoDaCompra{
+    width: 500px;
+    height: 580px;
+    padding: 15px;
+    max-width: 100%;
+    margin-right: 100px;
+    background-color: white;
+    border: 2px solid rgb(223, 223, 223);
+    color: rgb(96, 96, 96);
+    
+}
+
+.dadosForms, .login{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputDados{
+    width: 60%;
+    margin-right: 15px;
+}
+
+.login{
+    justify-content: space-between;
+}
+
+.botaoLogin{
+    background-color: rgb(151, 255, 220);
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.valorDoPedido, .valorDoFrete, .valorTotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px ;
+}
+
+.detalhesDoPedido{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botaoFinalizar{
+    background-color: rgb(3, 255, 171);
+    font-size: 16px;
+    margin-left: 180px;
+    padding: 5px;
+    border-radius: 5px;
+}

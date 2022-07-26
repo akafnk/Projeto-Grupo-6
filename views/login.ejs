@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <title> IDENTIFICAÇÃO </title>
+</head>
+<body>
+    <%- include("./partials/header") %>
+    
+    <div class="box">
+        <form action="/login" method="">
+            <fieldset class="caixa1">
+                <legend> <b>IDENTIFICAÇÃO</b></legend>
+                <br>
+                <div class="identificacao">
+                    <label for="email">E-MAIL: </label>
+                    <input class="inputDados" type="email" name="email" id="email" required>
+                </div>
+                <br>
+                <div class="identificacao">
+                    <label for="senha">SENHA: </label>
+                    <input class="inputDados" type="password" name="senha" id="senha" required>
+                </div>
+                <br>
+                <button class="botaoEntrar" type="submit"> ENTRAR </button>
+            </fieldset>
+            <br>
+            <fieldset class="caixa2">
+                <legend> <b> OU </b> </legend>
+                <p> <b> NÃO POSSUI CADASTRO? </b> </p>
+                <br>
+                <button class="botaoCadastro" type="submit"> ME CADASTRAR </button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

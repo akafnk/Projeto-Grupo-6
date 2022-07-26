@@ -9,6 +9,11 @@ var usersRouter = require('./routes/users');
 const produtoRouter = require("./routes/rotaProdutos");
 const homeRouter = require('./routes/rotaHome')
 const catalogoRouter = require ('./routes/rotaCatalogo')
+const sacolaRouter = require('./routes/rotaSacola');
+const pagamentoRouter = require('./routes/rotaPagamento');
+const loginRouter = require('./routes/rotaLogin');
+const cadastroRouter = require('./routes/rotaCadastro');
+
 var app = express();
 
 // view engine setup
@@ -27,6 +32,12 @@ app.use('/users', usersRouter);
 app.use('/', produtoRouter);
 app.use('/', homeRouter);
 app.use('/', catalogoRouter);
+app.use('/', sacolaRouter);
+app.use('/', pagamentoRouter);
+app.use('/', loginRouter);
+app.use('/', cadastroRouter);
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

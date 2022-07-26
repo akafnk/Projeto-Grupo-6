@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/cadastro.css">
+    <title> CADASTRO </title>
+</head>
+<body>
+  <div class="boxCadastro">
+    <form action="/cadastro" method="">
+      <fieldset class="caixaCadastro">
+        <legend> <b>CADASTRO </b></legend>
+        <br>
+        <div>
+          <label for="nome"> NOME: </label>
+          <input class="inputDados" type="text" name="nome" id="nome" required>
+        </div>
+        <br>
+        <div>
+          <label for="cpf"> CPF: </label>
+          <input class="inputDados" type="number" name="cpf" id="cpf" required>
+        </div>
+        <br>
+        <div>
+          <label for="Nascimento"> DATA DE NASCIMENTO: </label>
+          <input class="inputDados" type="date" name="nascimento" id="nascimento" required>
+        </div>
+        <br>
+        <div>
+          <label for="telefone"> TELEFONE: </label>
+          <input class="inputDados" type="tel" name="telefone" id="telefone" required>
+        </div>
+        <br>
+        <div>
+          <label for="email"> E-MAIL: </label>
+          <input class="inputDados" type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <div>
+          <label for="senha">SENHA: </label>
+          <input class="inputDados" type="password" name="senha" id="senha" required>
+        </div>
+        <br>
+        <div>
+          <label for="senha">CONFIRMAR SENHA:</label>
+          <input class="inputDados" type="password" name="senha" id="senha" required>
+        </div>
+        <br>
+        <button class="botaoCadastro" type="submit"> CADASTRAR </button>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
