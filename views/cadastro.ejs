@@ -8,8 +8,11 @@
     <title> CADASTRO </title>
 </head>
 <body>
+
+  <%- include("./partials/header-mini") %>
+
   <div class="boxCadastro">
-    <form action="/cadastro" method="">
+    <form action="/cadastro" method="POST" enctype="multipart/form-data">
       <fieldset class="caixaCadastro">
         <legend> <b>CADASTRO </b></legend>
         <br>
@@ -52,5 +55,9 @@
       </fieldset>
     </form>
   </div>
+
+  <%- include("./partials/footer") %>
+        
+
 </body>
 </html>
