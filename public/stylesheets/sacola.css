@@ -8,12 +8,9 @@
     font-family: Oswald;
 }
 
-header{
-    background-color: black;
-    height: 123px;
-    display: flex;
-    align-items: center;
-
+body{
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .caixaPrincipal{
@@ -24,27 +21,28 @@ header{
 .linhasItens{
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
-    width: 300%;
+    border: none;
+    width: 800px;
     margin-top: 200px;
     margin-left: 50px;
     padding: 10px;
-    font-size: 17px;
+    font-size: 12px;
     color: grey;
     position: relative;
-    max-width: 210%;
+    
 }
 
 .primeiraLinha{
     display: flex;
     justify-content: space-between;
-    border: 2px solid gray;
-    width: 300%;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    width: 800px;
     margin-left: 50px;
     align-items: center;
     padding: 10px;
-    font-size: 17px;
-    max-width: 210%;
+    font-size: 12px;
     position: relative;
 }
 
@@ -57,18 +55,18 @@ header{
 
 .classeBotao{
     position: relative;
-    left: 185%;
+    left: 72%;
     margin-top: 40px;
 }
 
 .botaoContinuarComprando{
     padding: 10px;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
+    font-size: 12px;
+    margin-left: 10%;
     color: grey;
     background-color: rgb(233, 229, 229);
     border: 1px solid gray;
+    cursor: pointer;
 }
 
 
@@ -84,6 +82,7 @@ header{
 
 .frete{
     padding: 20px;
+    font-size: 12px;
     
 }
 
@@ -92,6 +91,7 @@ header{
     margin-top: 20px;
     height: 100%;
     padding: 30px;
+    font-size: 12px;
 }
 
 .valorDoPedido, .valorDoFrete, .valorTotal {
@@ -101,7 +101,7 @@ header{
 }
 
 .valorTotal{
-    font-size: 20px;
+    font-size: 13px;
 }
 
 
@@ -109,7 +109,7 @@ header{
     background-color: rgb(67, 255, 67);
     border-radius: 5px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 12px;
     cursor: pointer;
 }
 
@@ -117,10 +117,12 @@ header{
     background-color: rgb(67, 255, 67);
     padding: 5px;
     border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 .inputCep{
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .preco1{
