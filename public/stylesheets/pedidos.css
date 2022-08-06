@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Oswald;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.boxPrincipal{
+    display: flex;
+    border: 1px solid black;
+    width: 50%;
+    height: 500px;
+    margin-top: 250px;
+    margin-left: 500px ;
+    
+}
+
+h2{
+    padding: 15px;
+}
+
+.caixaBotoes{
+    padding: 5px;  
+    width: 30%;
+}
+
+.caixaInfos{
+    padding: 5px;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.caixaInicio{
+    border: 2px solid gray;
+    height: 60px;
+    padding: 20px;
+    color: grey;
+}
+
+.caixaPedidos, .caixaInformacoes, .caixaSair, .caixaEnderecos{
+    border: 2px solid gray;
+    height: 60px;
+    padding: 20px;
+    border-top: none;
+    color: grey;
+}
+
+.tituloPedidos{
+    border: 2px solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+
