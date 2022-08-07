@@ -1,3 +1,5 @@
+const fs = require ("fs")
+
 function validarCadastro (req,res,next){
     const cadastro = req.body
     console.log(cadastro)

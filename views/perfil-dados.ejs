@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../public/stylesheets/pedidos.css" rel="stylesheet">
-    <title>PEDIDOS</title>
+    <link href="/stylesheets/perfil-dados.css" rel="stylesheet">
+    <title>PERFIL</title>
 </head>
 <body>
+
+    <%- include("./partials/header-mini") %>
+
     <div class="boxPrincipal"> 
         <div class="caixaBotoes">
             <h2> Olá, Usuário </h2>
@@ -29,10 +32,13 @@
             </div>
         </div>
         <div class="caixaInfos">
-            <div class="tituloPedidos">
-                <h2> Meus Pedidos </h2>
+            <div class="tituloUsuario">
+                <h2> Informações da Conta </h2>
             </div>
         </div>
     </div>
+
+    <%- include("./partials/footer") %>
+
 </body>
 </html>

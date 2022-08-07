@@ -14,6 +14,8 @@ const pagamentoRouter = require('./routes/rotaPagamento');
 const loginRouter = require('./routes/rotaLogin');
 const cadastroRouter = require('./routes/rotaCadastro');
 const perfilRouter = require("./routes/rotaPerfilusuario");
+const inicioMiddlewares = require("./middlewares/inicio");
+
 var app = express();
 
 // view engine setup
@@ -25,6 +27,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/public')));
+app.use(inicioMiddlewares);
 
 
 app.use('/', indexRouter);

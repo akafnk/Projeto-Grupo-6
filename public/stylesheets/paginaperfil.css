@@ -5,14 +5,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-.cabecalho{
-    display:flex;
-    background-color: black;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-    width: 100%;
-}
 .boxPrincipal{
     display: flex;
     border: 1px solid black;
@@ -120,8 +112,8 @@ h2{
     flex-direction: column;
     margin-left: -30px;
     margin-top: 80px;
-   align-items: center;
-   width: 22%;
+    align-items: center;
+    width: 22%;
  }
  .logo-fo{
     display: flex;
@@ -152,6 +144,10 @@ h2{
     margin-top: 15px;
 
  }
+
+
+
+
 @media(max-width:610px){
     body{
         max-width: 100%;

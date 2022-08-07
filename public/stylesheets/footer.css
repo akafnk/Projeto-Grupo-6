@@ -1,63 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap');
+
 *{
-   margin:0;
-   padding: 0;
-   box-sizing: border-box;
-}
-.boxCadastro{
-    font-family: Oswald;
-    position: absolute;
-    width: 700px;
-    height: 600px;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    background-color: white;
-    padding: 15px;
-    border: 2px solid black;
-    border-radius: 15px;
-    color: black;
-    font-size: 12px;
-    text-align: center;
-    margin-top:-100px
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-}
-
-legend{
-    text-align: center;
-    font-size: 15px;
-}
-
-.caixaCadastro{
-    padding: 15px;
-    border: 1px solid grey;
-    height: 568px;
-}
-
-.inputDados{
-    padding: 5px;
-    width: 50%;
-    height: 30px;
-    font-size: 12px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: white;
-}
-
-.botaoCadastro{
-    margin-top: 10px;
-    padding: 7px;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 15px;
-    height: 50px;
-    width: 50%;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .rodape{
     display: flex;
@@ -69,7 +14,6 @@ legend{
     width: 100%;
     line-height: 25px;
     font-size: 10px;
-    margin-top:650px
 }
  .textos{
     font-family: 'Roboto', sans-serif;
@@ -131,19 +75,16 @@ legend{
     margin-top: 60px;
     align-items: center;
  }
- form input{
+ footer form input{
     width: 40%px;
     height: 23px;
     background-color: black;
     border: solid 1px white;
     margin-top: 15px;
  }
- form button{
+ footer form button{
     width: 80%;
     height: 23px;
     margin-top: 15px;
 
  }
-.fotoperfil{
-   background-color: white;
-}
