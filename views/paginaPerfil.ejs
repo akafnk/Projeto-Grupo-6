@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../public/stylesheets/paginaperfil.css" rel="stylesheet">
+    <link href="/stylesheets/paginaperfil.css" rel="stylesheet">
     <title>PERFIL</title>
 </head>
 <body>
+
+    <%- include("./partials/header-mini") %>
+
     <div class="boxPrincipal"> 
         <div class="caixaBotoes">
             <h2> Olá, Usuário </h2>
@@ -15,36 +18,37 @@
             <div class="caixaInicio"> 
                 <a class="caixinhaMenu"> INÍCIO </a>
             </div>
-            <div class="caixaPedidos">
+            <div class="caixaInformacoes">
                 <a class="caixinhaMenu"> MEUS PEDIDOS </a>
             </div>
             <div class="caixaInformacoes"> 
                 <a class="caixinhaMenu"> PERFIL DO USUÁRIO </a>
             </div>
-            <div class="caixaEnderecos">
+            <div class="caixaInformacoes">
                 <a class="caixinhaMenu"> MEUS ENDEREÇOS </a>
             </div>
-            <div class="caixaSair">
+            <div class="caixaInformacoes">
                 <a class="caixinhaMenu"> SAIR </a>
             </div>
         </div>
         <div class="caixaInfos">
-            <div class="blocoPedidos"> 
-                <img src="../public/images/img-perfil/sacola1.png">
+            <div class="blocos"> 
+                <img class="icon" src="/images/img-perfil/sacola1.png">
                 <br>
                 <a class="caixinhasLink"> Meus Pedidos </a> 
             </div>
-            <div class="blocoConta">
-                <img src="../public/images/img-perfil/usuario.png">
+            <div class="blocos">
+                <img class="icon" src="/images/img-perfil/usuario.png">
                 <br>
                 <a class="caixinhasLink"> Perfil do Usuário </a>
             </div>
-            <div class="blocoEndereco">
-                <img src="../public/images/img-perfil/Localização-PNG.png">
+            <div class="blocos">
+                <img class="icon" src="/images/img-perfil/Localização-PNG.png">
                 <br>
                 <a class="caixinhasLink"> Meus endereços </a>
             </div>
         </div>
     </div>
+    <%- include("./partials/footer") %>
 </body>
 </html>

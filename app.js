@@ -13,11 +13,11 @@ const sacolaRouter = require('./routes/rotaSacola');
 const pagamentoRouter = require('./routes/rotaPagamento');
 const loginRouter = require('./routes/rotaLogin');
 const cadastroRouter = require('./routes/rotaCadastro');
-
+const perfilRouter = require("./routes/rotaPerfilusuario");
 var app = express();
 
 // view engine setup
-app.set('views', pathjoin(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -36,6 +36,7 @@ app.use('/', sacolaRouter);
 app.use('/', pagamentoRouter);
 app.use('/', loginRouter);
 app.use('/', cadastroRouter);
+app.use("/", perfilRouter);
 
 
 // catch 404 and forward to error handler
