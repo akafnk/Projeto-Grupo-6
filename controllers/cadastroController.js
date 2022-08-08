@@ -4,8 +4,7 @@ const cadastroController = {
     view: (req, res) => {
        return res.render('cadastro')
     },
-    Processarcadastro: (req, res) =>{
-        console.log(req.body) //revisar com o professor
+    Processarcadastro: (req, res) =>{ //revisar com o professor
         const errors = validationResult(req);
 
         if(!errors.isEmpty()){
