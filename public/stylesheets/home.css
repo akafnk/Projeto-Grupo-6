@@ -189,6 +189,7 @@ label span:nth-child(3){
 
 .caixa-quadro{
     display: flex;
+    margin-left: 20%;
     width: 95%;
     height: 290px;
 }

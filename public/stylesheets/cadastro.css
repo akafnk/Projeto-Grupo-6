@@ -8,8 +8,8 @@
 .boxCadastro{
     font-family: Oswald;
     position: absolute;
-    width: 700px;
-    height: 600px;
+    width: 600px;
+    height: 580px;
     left: 50%;
     transform: translate(-50%, 20%);
     background-color: white;
@@ -35,7 +35,7 @@ legend{
 .caixaCadastro{
     padding: 15px;
     border: 1px solid grey;
-    height: 568px;
+    height: 530px;
 }
 
 .inputDados{
