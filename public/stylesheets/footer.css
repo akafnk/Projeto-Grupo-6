@@ -69,22 +69,3 @@
     align-items: center;
     margin-top:20px
  }
- .formulario{
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-    align-items: center;
- }
- footer form input{
-    width: 40%px;
-    height: 23px;
-    background-color: black;
-    border: solid 1px white;
-    margin-top: 15px;
- }
- footer form button{
-    width: 80%;
-    height: 23px;
-    margin-top: 15px;
-
- }

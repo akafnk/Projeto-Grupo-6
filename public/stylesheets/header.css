@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hamburguer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+}
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+header div label{
+    cursor: pointer;
+    position: relative;
+    display:block;
+    height: 22px;
+    width: 30px;
+}
+header div label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: white;
+    transition: 0,25s ease-in-out;
+}
+label span:nth-child(1){
+    top:0;
+}
+label span:nth-child(2){
+    top:8px;
+}
+label span:nth-child(3){
+    top:16px;
+}
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top:8px;
+}
+#checkbox-menu:checked + label span:nth-child(2){ 
+    opacity: 0;
+
+}
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+}
+.logo-header{
+    margin-left: -120px;
+}
+.cabecalho{
+    display:flex;
+    background-color:black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-around;
+    align-items: center;
+}
+.login2{
+    text-decoration: none;
+    color:white;
+}
+.compras{
+    display: flex;
+    font-size: 10px;
+}
+.lupa{
+    display:flex;
+    align-items: center;
+}
+.compras{
+    display: flex;
+    font-size: 10px;
+}

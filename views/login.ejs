@@ -11,18 +11,18 @@
     <%- include("./partials/header-mini") %>
     
     <div class="box">
-        <form action="/login" method="">
+        <form action="/login" method="post">
             <fieldset class="caixa1">
                 <legend> <b>IDENTIFICAÇÃO</b></legend>
                 <br>
                 <div class="identificacao">
                     <label for="email">E-MAIL: </label>
-                    <input class="inputDados" type="email" name="email" id="email" required>
+                    <input class="inputDados" type="email" name="email" id="email">
                 </div>
                 <br>
                 <div class="identificacao">
                     <label for="senha">SENHA: </label>
-                    <input class="inputDados" type="password" name="senha" id="senha" required>
+                    <input class="inputDados" type="password" name="senha" id="senha">
                 </div>
                 <br>
                 <button class="botaoEntrar" type="submit"> ENTRAR </button>
