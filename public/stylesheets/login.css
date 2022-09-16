@@ -65,7 +65,10 @@ legend{
     height: 40px;
     width: 60%;
 }
-.botaoCadastro{
+
+.redirect{
+    text-decoration: none;
+    color:white;
     margin-top: 10px;
     padding: 7px;
     background-color: black;
@@ -75,4 +78,9 @@ legend{
     font-size: 15px;
     height: 40px;
     width: 60%;
+    margin-left: 130px;
+}
+#link{
+    text-decoration: none;
+    color: white;
 }

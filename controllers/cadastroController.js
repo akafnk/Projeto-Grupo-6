@@ -4,7 +4,7 @@ const cadastroController = {
     view: (req, res) => {
        return res.render('cadastro')
     },
-    Processarcadastro: (req, res) =>{ //revisar com o professor
+    Processarcadastro: (req, res) =>{ 
         const errors = validationResult(req);
 
         if(!errors.isEmpty()){
@@ -14,7 +14,7 @@ const cadastroController = {
             return res.send("Selecione um arquivo")
         }
         console.log(req.file)
-       return res.send("Carregada om sucesso");
+       return res.render("paginaPerfil");
     }
 }
 

@@ -70,7 +70,7 @@ label span:nth-child(3){
     display: flex;
     flex-direction: row;
     width: 25%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .login2{
@@ -79,13 +79,16 @@ label span:nth-child(3){
 }
 .compras{
     display: flex;
-    font-size: 10px;
+    justify-content: center;
+    font-size: 14px;
+    text-decoration: none;
+    color:white
 }
 .lupa{
     display:flex;
     align-items: center;
 }
-.compras{
-    display: flex;
-    font-size: 10px;
+#link{
+    text-decoration: none;
+    color:white
 }
