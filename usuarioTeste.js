@@ -1,13 +1,13 @@
-const {sequelize, Usuario}= require('./models/index')
+const {sequelize, Usuario,Pedido}= require('./models/index')
 
 
-Usuario.findByPk(2).then(result=>{
-    console.log(result.toJSON())
+Usuario.findByPk(3).then(result=>{
+   //console.log(result.toJSON())
     }
 )
 async function buscarUsuario(){
-    const usu = await Usuario.findByPk(4, {include:['usuario_endereco']})
-    console.log(usu.toJSON())
+    const usu = await Pedido.findByPk(1, {include:['pedido_produto']})
+    console.log(usu)
 }
 buscarUsuario()
 

@@ -11,12 +11,18 @@ module.exports = (sequelize, DataTypes) => {
             timestamps: false,
         })
 
-        Usuario.associate= (models) =>{
-            Usuario.hasMany(models.Endereco,{
-                as: "usuario_endereco",
-                foreignKey: "usuario_id"
-            })
-        }
+    Usuario.associate = (models) => {
+        
+        Usuario.hasMany(models.Endereco, {
+            as: "usuario_endereco",
+            foreignKey: "usuario_id"
+        })
+
+        Usuario.hasMany(models.Pedido, {
+            as: "usuario_pedido",
+            foreignKey: "usuario_id"
+        })
+    }
 
     return Usuario
 }

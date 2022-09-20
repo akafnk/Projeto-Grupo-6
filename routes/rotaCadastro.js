@@ -18,8 +18,8 @@ const multerDiskStorage = multer.diskStorage({
 
 const upload = multer ({storage: multerDiskStorage })
 const validacoes = [
-    body("nome").notEmpty().withMessage("Deve preencher o nome").isString().bail(),
-    body("nascimento").notEmpty().withMessage("Deve preencher a data").isDate(),
+    body("nome").notEmpty().withMessage("Deve preencher o nome").withMessage("Deve preencher o nome"),
+    body("nascimento").notEmpty().withMessage("Deve preencher a data").isDate().withMessage("Data invalida"),
     body("telefone").notEmpty().withMessage("Deve inserir um telefone válido").isNumeric().isLength({min:8, max:11}),
     body("email").notEmpty().withMessage("Deve inserir um email válido").isEmail(),
     body("senha").notEmpty().withMessage("A senha deve ter no mínimo 6 caracteres ").isNumeric().isLength({min:6}),

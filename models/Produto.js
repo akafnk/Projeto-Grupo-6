@@ -10,5 +10,13 @@ module.exports = (sequelize, DataTypes) => {
             tableName: 'produtos',
             timestamps: false,
         })
+        produtos.associate = (models)=>{
+            produtos.belongsToMany(models.Pedido,{
+                as: "produto_pedido",
+                through: "produtos_pedidos",
+                foreignKey: "produto_id",
+                otherKey: "pedido_id"
+            })
+        }
     return produtos
 }
