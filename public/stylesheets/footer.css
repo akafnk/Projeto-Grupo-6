@@ -1,71 +1,79 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+.rodape {
+   display: flex;
+   justify-content: space-around;
+   background-color: #202020;
+   font-family: 'Oswald', sans-serif;
+   color: white;
+   height: 300px;
+   width: 100%;
+   line-height: 25px;
+   font-size: 10px;
 }
-.rodape{
-    display: flex;
-    justify-content: space-around;
-    background-color: #202020;
-    font-family: 'Oswald', sans-serif;
-    color:white;
-    height: 380px;
-    width: 100%;
-    line-height: 25px;
-    font-size: 10px;
+
+.textos {
+   font-family: 'Roboto', sans-serif;
+   color: rgba(130, 130, 130, 1);
+   font-size: 9px;
+   list-style: none;
 }
- .textos{
-    font-family: 'Roboto', sans-serif;
-    color:rgba(130, 130, 130, 1);
-    font-size:9px;
-    list-style: none;
- }
- .tex{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
-    color:rgba(130, 130, 130, 1);
- }
- .caixa-fo1{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px; 
-    margin-top: 80px; 
-    width: 9%;
- }
- .caixa-fo2{
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    margin-left: 15px;
-    margin-right: 10px;
- }
- .caixa-fo3{
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    align-items: center;
-    margin-left: 20px;
- }
- .caixa-fo4{
-    display: flex;
-    flex-direction: column;
-    margin-left: -30px;
-    margin-top: 80px;
+
+.tex {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   list-style: none;
+   font-family: 'Roboto', sans-serif;
+   color: rgba(130, 130, 130, 1);
+}
+
+.caixa-fo1 {
+   display: flex;
+   flex-direction: column;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: 80px;
+   width: 9%;
+}
+
+.caixa-fo2 {
+   display: flex;
+   flex-direction: column;
+   margin-top: 80px;
+   margin-left: 15px;
+   margin-right: 10px;
+}
+
+.caixa-fo3 {
+   display: flex;
+   flex-direction: column;
+   margin-top: 80px;
+   align-items: center;
+   margin-left: 20px;
+}
+
+.caixa-fo4 {
+   display: flex;
+   flex-direction: column;
+   margin-left: -30px;
+   margin-top: 80px;
    align-items: center;
    width: 22%;
- }
- .logo-fo{
-    display: flex;
-    align-items: center;    
- }
- .logo-redes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top:20px
- }
+}
+
+.logo-fo {
+   display: flex;
+   align-items: center;
+}
+
+.logo-redes {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px
+}

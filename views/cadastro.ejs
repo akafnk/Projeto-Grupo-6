@@ -12,13 +12,13 @@
   <%- include("./partials/header-mini") %>
 
   <div class="boxCadastro">
-    <% if(typeof errors !== 'undefined'){ %>
+    <!-- <% if(typeof errors !== 'undefined'){ %>
     <ul>
       <% for(let error in errors){%>
       <li><%= errors[error].msg %></li>
     <% } %>
       </ul>
-    <% } %>
+    <% } %> -->
     <form action="/cadastro" method="POST" enctype="multipart/form-data">
       <fieldset class="caixaCadastro">
         <legend> <b>CADASTRO </b></legend>
@@ -29,8 +29,13 @@
         </div>
         <br>
         <div>
+          <label for="sobrenome"> SOBRENOME: </label>
+          <input class="inputDados" type="text" name="sobrenome" id="sobrenome">
+        </div>
+        <br>
+        <div>
           <label for="Nascimento"> DATA DE NASCIMENTO: </label>
-          <input class="inputDados" type="date" name="nascimento" id="nascimento">
+          <input class="inputDados" type="date" name="data_nascimento" id="data_nascimento">
         </div>
         <br>
         <div>
@@ -48,10 +53,10 @@
           <input class="inputDados" type="password" name="senha" id="senha">
         </div>
         <br>
-        <div>
+        <!-- <div>
           <label for="senha">CONFIRMAR SENHA:</label>
-          <input class="inputDados" type="password" name="senhaconf" id="senha">
-        </div>
+          <input class="inputDados" type="password" name="senha" id="senha">
+        </div> -->
         <br>
         <div>
           <label for="imagem">Imagem de perfil</label>

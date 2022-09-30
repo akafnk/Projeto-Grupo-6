@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,67 @@
     <link href="/stylesheets/perfil-dados.css" rel="stylesheet">
     <title>PERFIL</title>
 </head>
+
 <body>
 
     <%- include("./partials/header-mini") %>
 
-    <div class="boxPrincipal"> 
-        <div class="caixaBotoes">
-            <h2> Olá, Usuário </h2>
-            <br>
-            <div class="caixaInicio"> 
-                <a class="caixinhaMenu"> INÍCIO </a>
+        <div class="boxPrincipal">
+            <div class="caixaBotoes">
+                <h2> Altere seus dados aqui! </h2>
+                <br>
+                <div class="caixaPerfil">
+                    <a href="/perfil" class="link"> PERFIL DO USUÁRIO </a>
+                </div>
+                <div class="caixaPedidos">
+                    <a class="link"> EDITAR DADOS </a>
+                </div>
+                <div class="caixaSair">
+                    <a> SAIR </a>
+                </div>
             </div>
-            <div class="caixaPedidos">
-                <a class="caixinhaMenu"> MEUS PEDIDOS </a>
-            </div>
-            <div class="caixaInformacoes"> 
-                <a class="caixinhaMenu"> PERFIL DO USUÁRIO </a>
-            </div>
-            <div class="caixaEnderecos">
-                <a class="caixinhaMenu"> MEUS ENDEREÇOS </a>
-            </div>
-            <div class="caixaSair">
-                <a class="caixinhaMenu"> SAIR </a>
+            <div class="caixaInfos">
+                <div>
+                    <h2> Informações da Conta </h2>
+                    <div>
+                        <form action=  method="POST">
+                            <div>
+                                <label for="nome"> Nome: </label>
+                                <input class="inputDados" type="text" name="nome" id="nome" >
+                            </div>
+                            <br>
+                            <div>
+                                <label for="sobrenome"> Sobrenome: </label>
+                                <input class="inputDados" type="text" name="sobrenome" id="sobrenome">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="telefone"> Telefone: </label>
+                                <input class="inputDados" type="tel" name="telefone" id="telefone">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="email"> E-mail: </label>
+                                <input class="inputDados" type="email" name="email" id="email">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="senha">Senha: </label>
+                                <input class="inputDados" type="password" name="senha" id="senha">
+                            </div>
+                            <br>
+                            <button class="botaoCadastro" type="submit"> Salvar Alterações </button>
+                        </form>
+                        <br>
+                        <form action="/deletar/?_method=DELETE">
+                            <button class="" type="submit">DELETAR CONTA</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="caixaInfos">
-            <div class="tituloUsuario">
-                <h2> Informações da Conta </h2>
-            </div>
-        </div>
-    </div>
-
-    <%- include("./partials/footer") %>
+        <%- include("./partials/footer") %>
 
 </body>
+
 </html>

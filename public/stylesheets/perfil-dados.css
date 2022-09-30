@@ -10,20 +10,18 @@
 body{
     min-height: 100vh;
     min-width: 100vw;
-    font-family: Oswald;
+    font-family: 'Oswald', sans-serif;
 }
 .boxPrincipal{
     display: flex;
-    border: 1px solid black;
     width: 100%;
-    height: 500px;
+    height: 400px;
+    margin-bottom: 50px;
 }
 
 h2{
     padding: 15px;
 }
-
-
 .caixaBotoes{
     padding: 5px;  
     width: 30%;
@@ -35,11 +33,12 @@ h2{
     width: 80%;
 }
 
-.caixaInicio{
+.caixaPerfil{
     border: 2px solid gray;
     height: 60px;
     padding: 20px;
     color: grey;
+    text-decoration: none;
 }
 
 .caixaPedidos, .caixaInformacoes, .caixaSair, .caixaEnderecos{
@@ -55,6 +54,37 @@ h2{
     border-top: none;
     border-left: none;
     border-right: none;
+}.botaoCadastro{
+    padding: 7px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    width: 50%;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
 }
+.formedit{
+    font-family: 'Oswald', sans-serif;
+}
+.inputDados{
+    padding: 5px;
+    width: 50%;
+    height: 25px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}.link{
+    text-decoration: none;
+    color: grey;
+}
+
 
 

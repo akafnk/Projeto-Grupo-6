@@ -1,17 +1,14 @@
+const { sequelize, Usuario } = require("../models/index")
+
 const perfilController = {
-    
-    perfil:(req,res) =>{
-        return res.render("paginaPerfil")
+
+    perfil: (req, res) => {
+        return res.render("paginaPerfil", {
+        })
     },
-    pedidosPerfil:(req,res) =>{
+    pedidosPerfil: (req, res) => {
         return res.render("pedidos")
     },
-    endereco:(req,res) =>{
-        return res.render("endereco")
-    },
-    dadosUsuario:(req,res) =>{
-        return res.render("perfil-dados")
-    }    
 }
 
-module.exports= perfilController;
+module.exports = perfilController;

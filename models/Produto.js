@@ -5,6 +5,7 @@ module.exports = (sequelize, DataTypes) => {
         categoria: DataTypes.STRING,
         preco: DataTypes.DECIMAL (5,2) ,
         tamanho: DataTypes.STRING,
+        imagem: DataTypes.STRING
     },
         {
             tableName: 'produtos',
