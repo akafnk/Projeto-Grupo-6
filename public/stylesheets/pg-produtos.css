@@ -4,6 +4,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 .hamburguer{
     height: 100%;
@@ -86,52 +87,36 @@ label span:nth-child(3){
 }
 
 /*CSS MAIN */
+
+
 .c-produtos{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    ;
-    justify-content:space-around;
+    width: 70%;
+    justify-content:space-between;
+    margin-left: 100px;
 }
 .c-1{
     display: flex;
-    justify-content: space-around; 
     width: 100%;
     margin: 20px;
-    font-family: 'Oswald', sans-serif;
 }
 .caixas2{
     display: flex;
     width: 100%; 
 }
-.detalhes-0{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 500px;
-    align-content: space-between;
-}
-.detalhes{
-    display: flex;
-    width: 100%;
-    margin-top:10px;
-    height: 140px;
-}  
-.logo{
+
+.fotoPrincipal{
     display: flex;
     width: 90%;
-    height: 450px;
+    height: 500px;
     margin-left: 10px;
+    margin-top: 10px;
 }
-.textos-logo{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Oswald', sans-serif; 
-}
+
 .letra-p{
-    font-size: 9px;
+    font-size: 13px;
     color:gray;
-    font-family: 'Oswald', sans-serif;
 }
 main section h5{
     font-size: 10px;
@@ -140,12 +125,8 @@ main section h5{
 .descricao-pr{
     margin-top: 10px;
 }
-.quadrados{
-    width: 20px;
-    margin-top: 5px;
-}
+
 form{
-    font-family: 'Oswald', sans-serif;
     margin-top: 10px;
     font-size: 10px;
 }
@@ -155,8 +136,7 @@ form{
     height: 20px;
     margin-top: 10px;
 }
-.quantidade{
-    display: flex;   
+.quantidade{  
     font-size: 10px;
     margin-top: 10px;
     margin-top: 20px;
@@ -168,6 +148,16 @@ form{
     width: 60px;
     margin-top: 5px;
 }
+
+.tabela-linha-cinza{
+    background-color: rgb(214, 210, 210);
+    text-align: center;
+}
+
+.tabela-linha-branca{
+    text-align: center;
+}
+
 .venda{
     display: flex;
     justify-content: center;
@@ -176,6 +166,7 @@ form{
     height: 40px;
     align-items: center;
     background-color:rgba(19, 245, 14, 1);
+    cursor: pointer;
 }
 .especificacao{
     display: flex;
@@ -188,47 +179,99 @@ form{
 }
 .minitext{
     margin-left: 15px;
-    font-family: 'Oswald', sans-serif;
+    color: gray;
 }
-.fotos-esp{
+.medidas{
     margin-left: 15px;
     margin-top:40px;
 }
-.tamanhos-roupas{
-    width: 40%;
-    margin-bottom: 30px;
-}
-.produtos-adc{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-main section .produtos-adc p{
-    font-size: 15px;
-    font-family: 'Oswald', sans-serif;
+
+main section p{
+    font-size: 16px;
 }
 
-.adicionais{
-    margin-top: 15px;
+
+.rodape{
     display: flex;
-    margin-left: 15px;
-    flex-direction: row;
-    margin-bottom: 10px;
-}
-.blocos{
+    justify-content: space-around;
+    background-color: #202020;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    height: 380px;
     width: 100%;
+    line-height: 25px;
+    font-size: 10px;
+    margin-top: 20px;
 }
-.fotos-art{
-    width: 90%;
-    height: 200px;
+.textos{
+    font-family: 'Roboto', sans-serif;
+    color:rgba(130, 130, 130, 1);
+    font-size:9px;
+    list-style: none;
 }
-.letra-m{
-font-size: 9.5px;
-    color:black;
-    font-family: 'Oswald', sans-serif;
+.tex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    color:rgba(130, 130, 130, 1);
 }
-.precos-art{
-    font-size: 15px;
-    font-family: 'Oswald', sans-serif;
+.caixa-fo1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px; 
+    margin-top: 80px; 
+    width: 9%;
 }
+.caixa-fo2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 15px;
+    margin-right: 10px;
+ }
+ .caixa-fo3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+    margin-left: 20px;
+ }
+ .caixa-fo4{
+    display: flex;
+    flex-direction: column;
+    margin-left: -10px;
+    margin-top: 80px;
+   align-items: center;
+   width: 22%;
+ }
+ .logo-fo{
+    display: flex;
+    align-items: center;    
+ }
+ .logo-redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px
+ }
+ .formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+ }
+ form input{
+    width: 40%px;
+    height: 23px;
+    border: solid 1px black;
+    margin-top: 15px;
+ }
+ footer form button{
+    width: 80%;
+    height: 23px;
+    margin-top: 15px;
+
+ }

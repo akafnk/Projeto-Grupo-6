@@ -123,4 +123,5 @@
     display: flex;
     width: 95%;
     height: 290px;
+    justify-content: center;
 }
