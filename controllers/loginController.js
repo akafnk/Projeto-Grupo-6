@@ -25,7 +25,11 @@ const loginController = {
         } else {
             return res.redirect("login");
         }
-    }
+    },
+    logout: (req, res) =>{
+        req.session.destroy();
+        return res.redirect("login")
+    } 
     
 }
 

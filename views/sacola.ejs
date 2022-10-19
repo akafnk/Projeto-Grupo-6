@@ -1,91 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/sacola.css">
-    <title>SACOLA DE COMPRAS</title>
+    <link rel="stylesheet" href="/stylesheets/carrinho.css">
+    <title>Carrinho</title>
 </head>
 
 <body>
-
-    <%- include("./partials/header-mini") %>
-
-
-    
-
-        <!-- <div id="blocos">
-            <section class="caixaPrincipal">
-                <div class="caixaProduto">
-                    <div class="linhasItens">
-                        <div class="produtos1"> PRODUTOS </div>
-                        <div class="preco1"> PREÇO </div>
-                        <div class="quantidade1"> QUANTIDADE </div>
-                        <div class="total1"> TOTAL </div>
-                    </div>
-                    <div class="primeiraLinha">
-                        <div class="imagemProduto">
-                            <img width="150px" src="/images/img-home/5.jpg">
-                        </div>
-                        <div class="nomeProduto">
-                            <p>Blusão sublimado urban - Brava</p>
-                        </div>
-                        <div class="valorProduto">
-                            <p>R$ 50,00</p>
-                        </div>
-                        <div class="quantidadeProduto">
-                            <p> 0 </p>
-                        </div>
-                        <div class="valorTotalProduto">
-                            <p> R$ 50,00 </p>
-                        </div>
-                        <div class="remover">
-                            <p> x </p>
-                        </div>
-                    </div>
-                    <div class="classeBotao">
-                        <button class="botaoContinuarComprando"> CONTINUAR COMPRANDO </button>
-                    </div>
+    <%- include("./partials/headerLogado") %>
+        <main>
+            <section class="titulo-carrinho">
+                <h1>MEU CARRINHO</h1>
+            </section>
+            <section class="produtosCarrinho">
+                <div class="imagemProduto">
+                    <img id="imagemProduto" src='/produto2.jpg'>
                 </div>
-                <div class="boxFinalizar">
-                    <div class="frete">
-                        <h2> <b> FRETE: </b> </h2>
-                        <br>
-                        <h3> Digite seu CEP para calcular o valor do frete: </h3>
-                        <br>
-                        <form>
-                            <label for="cep"> CEP: </label>
-                            <input class="inputCep" type="number" name="cep" id="cep" required>
-                            <button class="botaoConsultar"> CONSULTAR </button>
-                        </form>
-                    </div>
-                    <div class="total">
-                        <h2> TOTAL:</h2>
-                        <br>
-                        <div class="valorDoPedido">
-                            <p> VALOR DO PEDIDO: </p>
-                            <p> R$ 50,00 </p>
-                        </div>
-                        <div class="valorDoFrete">
-                            <p> FRETE: </p>
-                            <p> R$ 0,00 </p>
-                        </div>
-                        <div class="valorTotal">
-                            <p> <b>VALOR TOTAL: </b></p>
-                            <p> R$ 50,00 </p>
-                        </div>
-                        <br><br>
-                        <button class="botaoFinalizar" type="submit"> <b>Finalizar Compra</b> </button>
-                    </div>
+                <div class="descricaoProduto">
+                    <p>Camiseta </p>
+                    <br>
+                    <h3> Quantidade </h3>
+                    <p> 0 </p>
+                    <br>
+                    <h3>Tamanho</h3>
+                    <p> M </p>
                 </div>
-        </div>
-        </section>
-        </div> -->
-
+                <div class="precoProduto">
+                    <p> R$ 00,00 </p>
+                </div>
+            </section>
+            <div class="botoes">
+                <form action="/esvazia-carrinho" method="POST">
+                    <button type="submit">ESVAZIAR CARRINHO</button>
+                </form>
+                <a href="/produtos"> <button type="button"> CONTINUAR COMPRANDO </button> </a>
+            </div>
+            <section class="valorPedido">
+                <article class="valorDoPedido">
+                    <div class="totalDoPedido">
+                        <h2>TOTAL: R$ 00,00</h2>
+                    </div>
+                    <a href="/checkout"> <button type="button"> FINALIZAR PEDIDO </button></a>
+                </article>
+            </section>
+        </main>
         <%- include("./partials/footer") %>
-
 </body>
 
 </html>
