@@ -1,122 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.boxPrincipal{
-    display: flex;
-    border: 1px solid black;
-    width: 100%;
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
     font-family: 'Oswald', sans-serif;
-}
-h2{
-    padding: 15px;
-}
-.caixinhaMenu{
-    font-family: 'Oswald', sans-serif;
-    color: grey;
-    text-decoration: none;
 }
 
-.icon{
-    width: 60%;
-    height: 60px;
-    margin-left: 19px;
-   
+.boxPrincipal{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
 }
+
 .caixaBotoes{
     padding: 5px;  
-    width: 30%;
+    width: 20%;
+    margin-left: 10px;
 }
+
+.link{
+    text-decoration: none;
+    color: black;
+} 
 
 .caixaInfos{
     padding: 5px;
     margin-left: 20px;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.caixaInicio{
-    border: 2px solid gray;
-    height: 60px;
-    padding: 20px;
-    color: grey;
-}
-.caixaInformacoes{
-    border: 2px solid gray;
-    height: 60px;
-    padding: 20px;
-    border-top: none;
-    color: grey;
+    width: 50%;
 }
 
-.blocos {
-    border: 1px solid gray;
-    height: 150px;
+.identificacao {
+    display: flex;
+    width: 70%;
+}
+
+.labelForm {
+    width: 20%;
+    
+}
+
+.inputForm {
+    width: 100%;
+    margin-left: 20px;
+}
+
+h2 {
     padding: 15px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+}
+
+.boxInformacoes {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.inputDados{
+    padding: 5px;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.botao {
+    margin-top: 10px;
+    padding: 7px;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+    height: 60px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.botao:hover{
+    background: rgb(255, 224, 166);
 }
 
 
-
-
-
-@media(max-width:610px){
-    body{
+@media(max-width:610px) {
+    body {
         max-width: 100%;
         background-color: orange;
     }
-    h2{
+
+    h2 {
         color: white;
     }
-    .boxPrincipal{
+
+    .boxPrincipal {
         display: flex;
         border: 2px solid yellow;
         width: 100%;
         font-family: 'Oswald', sans-serif;
     }
-    .caixaBotoes{ 
+
+    .caixaBotoes {
         width: 100%;
-        margin-top:10px;
+        margin-top: 10px;
     }
-    .caixinhaMenu{
+
+    .caixinhaMenu {
         display: flex;
         align-items: center;
         justify-content: center;
         color: white;
     }
-    .caixaInformacoes{
+
+    .caixaInformacoes {
         font-family: 'Oswald', sans-serif;
     }
-    .rodape{
+
+    .rodape {
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #202020;
         font-family: 'Oswald', sans-serif;
-        color:white;
+        color: white;
         height: 380px;
         width: 100%;
     }
-     .caixa-fo1{
+
+    .caixa-fo1 {
         display: flex;
         width: 20%;
         margin-top: -100px;
-     }
-     .caixa-fo2{
+    }
+
+    .caixa-fo2 {
         display: none;
-     }
-     .caixa-fo3{
+    }
+
+    .caixa-fo3 {
         display: flex;
         align-items: center;
         margin-top: -200px;
-        
-     }/*
+
+    }
+
+    /*
      .caixa-fo4{
         display: none;
      }
@@ -129,4 +162,5 @@ h2{
     }
 } 
 }
-/* } */}
+/* } */
+}

@@ -19,34 +19,40 @@ body{
     margin-bottom: 50px;
 }
 
+.boxInformacoes {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.identificacao {
+    display: flex;
+    width: 70%;
+}
+
+.labelForm {
+    width: 20%;
+    
+}
+
+.inputForm {
+    width: 100%;
+    margin-left: 30px;
+}
+
 h2{
     padding: 15px;
 }
 .caixaBotoes{
     padding: 5px;  
-    width: 30%;
+    width: 20%;
+    margin-left: 10px;
 }
 
 .caixaInfos{
+    margin-top: 40px;
     padding: 5px;
-    margin-left: 20px;
-    width: 80%;
-}
-
-.caixaPerfil{
-    border: 2px solid gray;
-    height: 60px;
-    padding: 20px;
-    color: grey;
-    text-decoration: none;
-}
-
-.caixaPedidos, .caixaInformacoes, .caixaSair, .caixaEnderecos{
-    border: 2px solid gray;
-    height: 60px;
-    padding: 20px;
-    border-top: none;
-    color: grey;
+    margin-left: 30px;
+    width: 50%;
 }
 
 .tituloUsuario{
@@ -54,36 +60,78 @@ h2{
     border-top: none;
     border-left: none;
     border-right: none;
-}.botaoCadastro{
+}
+.botaoCadastro{
     padding: 7px;
-    background-color: black;
-    color: white;
+    background-color: rgb(80, 159, 80);
+    color: black;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
-    height: 30px;
-    width: 50%;
+    height: 40px;
+    width: 30%;
     font-family: 'Oswald', sans-serif;
-    display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
-   
+    margin-left: 15%;
+}
+
+.botaoCadastro:hover{
+    background-color: rgb(108, 189, 108);
+}
+
+.botaoDeletar {
+    padding: 7px;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 40px;
+    width: 30%;
+    font-family: 'Oswald', sans-serif;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.botaoDeletar:hover {
+    background-color: rgb(255, 94, 94);
 }
 .formedit{
     font-family: 'Oswald', sans-serif;
 }
 .inputDados{
     padding: 5px;
-    width: 50%;
-    height: 25px;
+    width: 100%;
+    height: 30px;
     font-size: 15px;
+    border-radius: 6px;
     border: 1px solid black;
-    border-radius: 5px;
     background-color: white;
-}.link{
+    outline: none;
+}
+.link{
     text-decoration: none;
-    color: grey;
+    color: black;
+} 
+
+.botao {
+    margin-top: 10px;
+    padding: 7px;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+    height: 60px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.botao:hover{
+    background: rgb(255, 224, 166);
 }
 
 

@@ -1,48 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap');
-*{
-    margin:0;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.logo-header{
-    margin-left: 15px;
+
+.logo-header {
+    margin-left: 30px;
 }
-.cabecalho{
-    display:flex;
-    background-color: black;
+
+.cabecalho {
+    display: flex;
+    background-color: rgb(223, 210, 67);
     color: white;
     justify-content: space-between;
     align-items: center;
     height: 80px;
     width: 100%;
-    font-family: 'Oswald', sans-serif;
-    font-size: 14px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 16px;
 }
-.login{
+
+.login {
     display: flex;
     flex-direction: row;
-    width: 15%;
+    width: 17%;
     justify-content: space-between;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 50px;
 }
-.login2{
+
+.login2 {
     text-decoration: none;
-    color:white;
+    color: blue;
 }
-.compras{
+
+.compras {
     display: flex;
     justify-content: center;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
-    color:white
+    color: green
 }
-.lupa{
-    display:flex;
+
+.lupa {
+    display: flex;
     align-items: center;
 }
-#link{
+
+#link {
     text-decoration: none;
-    color:white
+    color: white
 }

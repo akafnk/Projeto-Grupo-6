@@ -1,73 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/cadastro.css">
-    <title> CADASTRO </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/cadastro.css">
+  <title> CADASTRO </title>
 </head>
+
 <body>
 
   <%- include("./partials/header-mini") %>
 
-  <div class="boxCadastro">
-    <!-- <% if(typeof errors !== 'undefined'){ %>
+    <div class="boxCadastro">
+      <!-- <% if(typeof errors !== 'undefined'){ %>
     <ul>
       <% for(let error in errors){%>
       <li><%= errors[error].msg %></li>
     <% } %>
       </ul>
     <% } %> -->
-    <form action="/cadastro" method="POST" enctype="multipart/form-data">
-      <fieldset class="caixaCadastro">
-        <legend> <b>CADASTRO </b></legend>
-        <br>
-        <div>
-          <label for="nome"> NOME: </label>
-          <input class="inputDados" type="text" name="nome" id="nome">
-        </div>
-        <br>
-        <div>
-          <label for="sobrenome"> SOBRENOME: </label>
-          <input class="inputDados" type="text" name="sobrenome" id="sobrenome">
-        </div>
-        <br>
-        <div>
-          <label for="Nascimento"> DATA DE NASCIMENTO: </label>
-          <input class="inputDados" type="date" name="data_nascimento" id="data_nascimento">
-        </div>
-        <br>
-        <div>
-          <label for="telefone"> TELEFONE: </label>
-          <input class="inputDados" type="tel" name="telefone" id="telefone">
-        </div>
-        <br>
-        <div>
-          <label for="email"> E-MAIL: </label>
-          <input class="inputDados" type="email" name="email" id="email">
-        </div>
-        <br>
-        <div>
-          <label for="senha">SENHA: </label>
-          <input class="inputDados" type="password" name="senha" id="senha">
-        </div>
-        <br>
-        <!-- <div>
-          <label for="senha">CONFIRMAR SENHA:</label>
-          <input class="inputDados" type="password" name="senha" id="senha">
-        </div> -->
-        <br>
-        <div>
-          <label for="imagem">Imagem de perfil</label>
-          <input class="fotoperfil" type="file" name="userImage" id="userImage">
-        </div>
-        <button class="botaoCadastro" type="submit"> CADASTRAR </button>
-      </fieldset>
-    </form>
-  </div>
-  
-  <%- include("./partials/footer") %>
-        
+      <form action="/cadastro" method="POST" enctype="multipart/form-data">
+        <fieldset class="caixaCadastro">
+          <legend> <b> CADASTRO </b></legend>
+          <br>
+          <div class="identificacao">
+            <div class="labelForm"> <label for="nome"> NOME: </label> </div>
+            <div class="inputForm"> <input class="inputDados" type="text" name="nome" id="nome"> </div>
+          </div>
+          <br>
+          <div class="identificacao">
+            <div class= "labelForm"> <label for="sobrenome"> SOBRENOME: </label> </div>
+            <div class="inputForm"> <input class="inputDados" type="text" name="sobrenome" id="sobrenome"> </div>
+          </div>
+          <br>
+          <div class="identificacao">
+            <div class= "labelForm"> <label for="Nascimento"> DATA DE NASCIMENTO: </label> </div>
+            <div class="inputForm"> <input class="inputDados" type="date" name="data_nascimento" id="data_nascimento"> </div> 
+          </div>
+          <br>
+          <div class="identificacao">
+            <div class= "labelForm"> <label for="telefone"> TELEFONE: </label> </div>
+            <div class="inputForm"> <input class="inputDados" type="tel" name="telefone" id="telefone"> </div>
+          </div>
+          <br>
+          <div class="identificacao">
+            <div class= "labelForm"> <label for="email"> E-MAIL: </label> </div>
+            <div class="inputForm"> <input class="inputDados" type="email" name="email" id="email"> </div>
+          </div>
+          <br>
+          <div class="identificacao">
+            <div class= "labelForm"> <label for="senha">SENHA: </label> </div>
+            <div class="inputForm"> <input class="inputDados" type="password" name="senha" id="senha"> </div>
+          </div>
+          <br>
+          <div class="identificacao">
+            <div class= "labelForm"> <label for="imagem">IMAGEM DE PERFIL </label> </div>
+            <div class="inputForm"> <input class="fotoperfil" type="file" name="userImage" id="userImage"> </div>
+          </div>
+          <br>
+          <button class="botaoCadastro" type="submit"> CADASTRAR </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <%- include("./partials/footer") %>
+
 </body>
+
 </html>

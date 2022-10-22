@@ -1,47 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-.logo-header{
-    margin-left: -120px;
-}
+
 .cabecalho{
     display:flex;
-    background-color: black;
-    color: white;
+    background-color: rgb(223, 210, 67);
+    /* background-color: rgb(255, 167, 94); */
     justify-content: space-around;
     align-items: center;
     height: 80px;
     width: 100%;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fredoka One', cursive;
+    /* font-family: 'Oswald', sans-serif; */
     font-size: 14px;
 }
 .login{
     display: flex;
-    flex-direction: row;
-    width: 25%;
-    justify-content: space-between;
+    width: 30%;
+    justify-content: space-around;
     align-items: center;
 }
 .login2{
     text-decoration: none;
-    color:white;
+    color: blue
 }
 .compras{
     display: flex;
     justify-content: center;
     font-size: 14px;
     text-decoration: none;
-    color:white
+    color: green;
+    
 }
 .lupa{
     display:flex;
-    align-items: center;
+    align-items: center;;
 }
 #link{
     text-decoration: none;
-    color:white
+    color:orangered;
 }

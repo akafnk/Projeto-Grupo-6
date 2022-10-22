@@ -7,7 +7,7 @@
 .rodape {
    display: flex;
    justify-content: space-around;
-   background-color: #202020;
+   background-color: rgb(223, 210, 67);
    font-family: 'Oswald', sans-serif;
    color: white;
    height: 300px;

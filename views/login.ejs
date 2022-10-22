@@ -9,7 +9,6 @@
 </head>
 <body>
     <%- include("./partials/header-mini") %>
-    
     <div class="box">
         <form action="/login" method="post">
             <fieldset class="caixa1">
@@ -25,20 +24,19 @@
                     <input class="inputDados" type="password" name="senha" id="senha">
                 </div>
                 <br>
-                <button class="botaoEntrar" type="submit"> ENTRAR </button>
+                <button class="botao" type="submit"> ENTRAR </button>
             </fieldset>
             <br>
             <fieldset class="caixa2">
                 <legend> <b> OU </b> </legend>
                 <p> <b> NÃO POSSUI CADASTRO? </b> </p>
                 <br>
-            <div class="redirect">
-                <a id="link" href="cadastro">ME CADASTRAR</a>
-            </div> 
+                <button class="botao"> <a id="link" href="cadastro"> CADASTRAR </a> </button></a>
             </fieldset>
         </form>
     </div>
 
-    <%- include("./partials/footer") %>
-    </body>
+
+    <%- include("./partials/footer") %> 
+</body>
 </html>

@@ -4,22 +4,24 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Oswald', sans-serif;
 }
 body{
-   background-color: rgb(107, 105, 105);
+    background-image: linear-gradient(to right, rgb(25, 162, 186), rgb(24, 196, 227) );
+   /* background-color: rgb(107, 105, 105); */
 }
+
 .box{
-    font-family:'Oswald', sans-serif;
-    width: 70%;
-    height: 500px;
-    background-color: white;
+    width: 40%; 
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 15px;
-    border: 2px solid black;
     border-radius: 15px;
     color: black;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
-    margin:auto;
+    margin: 40px;
+    margin-left: 450px;
 }
 
 form{
@@ -29,58 +31,57 @@ form{
 
 legend{
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .caixa1{
     padding: 15px;
-    border: 1px solid grey;
-    height: 280px;
+    border: 1px solid rgb(0, 217, 255);
+    height: auto;
 }
 
 .caixa2{
     padding: 15px;
-    border: 1px solid grey;
-    height: 160px;
+    border: 1px solid rgb(0, 217, 255);
+    height: auto;
 }
 
 .inputDados{
     padding: 5px;
-    width: 60%;
+    width: 70%;
     height: 30px;
-    font-size: 12px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: white;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(81, 196, 202);
+    outline: none;
+    letter-spacing: 2px;
 }
 
-.botaoEntrar{
-    margin-top: 40px;
+.botao{
+    margin-top: 20px;
     padding: 7px;
-    background-color: black;
-    color: white;
+    background-color: orange;
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
     height: 40px;
     width: 60%;
+    border: none;
 }
 
-.redirect{
-    text-decoration: none;
-    color:white;
-    margin-top: 10px;
+.botao:hover{
     padding: 7px;
-    background-color: black;
-    color: white;
+    background:  rgb(255, 200, 99);
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
     height: 40px;
     width: 60%;
-    margin-left: 130px;
+    border: none;
 }
+
 #link{
     text-decoration: none;
-    color: white;
+    color: black
 }
