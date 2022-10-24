@@ -7,7 +7,7 @@
     font-family:'Oswald', sans-serif;
 }
 body{
-    background-image: linear-gradient(to right, rgb(25, 162, 186), rgb(24, 196, 227) );
+    background-image: linear-gradient(to right, rgb(195, 235, 255), rgb(146, 197, 255) );
    /* background-color: rgb(107, 105, 105); */
 }
 
@@ -36,13 +36,13 @@ legend{
 
 .caixa1{
     padding: 15px;
-    border: 1px solid rgb(0, 217, 255);
+    border: 1px solid rgba(0, 0, 0, 0.319);
     height: auto;
 }
 
 .caixa2{
     padding: 15px;
-    border: 1px solid rgb(0, 217, 255);
+    border: 1px solid rgba(0, 0, 0, 0.319);
     height: auto;
 }
 
@@ -53,7 +53,7 @@ legend{
     border-radius: 6px;
     border: none;
     font-size: 16px;
-    background-color: rgb(81, 196, 202);
+    background-color: white;
     outline: none;
     letter-spacing: 2px;
 }
@@ -61,27 +61,23 @@ legend{
 .botao{
     margin-top: 20px;
     padding: 7px;
-    background-color: orange;
-    border-radius: 5px;
+    background-color: rgb(93, 120, 255);
+    /* background-color: rgba(161, 87, 231, 0.71); */
+    border-radius: 10px;
     cursor: pointer;
     font-size: 15px;
     height: 40px;
     width: 60%;
     border: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .botao:hover{
-    padding: 7px;
-    background:  rgb(255, 200, 99);
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 15px;
-    height: 40px;
-    width: 60%;
-    border: none;
+    background-color: rgb(103, 128, 255);
 }
 
 #link{
     text-decoration: none;
-    color: black
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }

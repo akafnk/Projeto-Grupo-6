@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/stylesheets/home.css">
     <title>Mundo Infantil</title>
 </head>
-  <body>
+<body>
 
     <%- include("./partials/header") %>
 
@@ -17,68 +17,36 @@
                     <p>NOVIDADES QUENTINHAS</p>
                     <p>DE INVERNO</p>
                 </div>
-                <a href ="catalogo" class="botao-banner">COMPRE AGORA</a>
-                <img src="/images/img-home/BANNER PRINCIPAL.png" width="100%"> 
+                <a href="catalogo" class="botao-banner">COMPRE AGORA</a>
+                <img src="/images/img-home/BANNER PRINCIPAL.png" width="100%">
             </div>
             <div>
                 <p class="texto-banner">1º VEZ AQUI ?</p>
                 <a href="cadastro" class="botao-banner2">CADASTRE-SE</a>
                 <img class="imag" src="/images/img-home/1 VEZ AQUI.png" width="100%">
             </div>
-                <div class="subtitulo"><p> NOVIDADES </p></div>
+            <br>
+            <div class="subtitulo">
+                <h3> NOVIDADES </h3>
+            </div>
+            <br>
             <section class="novidades">
-                <article class="banner"> 
-                    <a href="/produtos/:id" class="linksroupas">
-                    <img class= "fotosPecas" src="/images/img-home/34.01.03.9.19.003---AM.jpg">
-                    <div class="infosPeca">
-                        <p class="linha1"> JAQUETA MENINO </p>
-                        <p class="linha2"> JAQUETA MONSTRINHO - DENGOS E CIA </p>
-                        <br>
-                        <br>
-                        <strong class="preco"> R$ 39,90 </strong>
-                    </div>
-                    </a>
-                </article>
-                <article class="banner"> 
-                    <img class= "fotosPecas" src="/images/img-home/calca.jpg">
-                    <div class="infosPeca"> 
-                        <p class="linha1"> CALÇA MENINO </p>
-                        <p class="linha2"> CALÇA MENINO RECORTES SUPER DUDE - BRAVA </p>
-                        <br>
-                        <br>
-                        <strong class="preco"> R$ 39,90 </strong>
-                    </div>
-                </article>
-                <article class="banner"> 
-                    <img class= "fotosPecas" src="/images/img-home/3.jpg">
-                    <div class="infosPeca"> 
-                        <p class="linha1"> JAQUETA MENINO </p>
-                        <p class="linha2"> JAQUETA SILK MANGAS - BRAVA</p>
-                        <br>
-                        <br>
-                        <strong class="preco"> R$ 49,90 </strong>
-                    </div>
-                </article>
-                <article class="banner"> 
-                    <img class= "fotosPecas" src="/images/img-home/4.jpg">
-                    <div class="infosPeca"> 
-                        <p class="linha1"> JAQUETA MENINO </p>
-                        <p class="linha2"> JAQUETA RECORTE XADREZ - BRAVA </p>
-                        <br>
-                        <br>
-                        <strong class="preco"> R$ 49,90 </strong>
-                    </div>
-                </article>
-                <article class="banner"> 
-                    <img class= "fotosPecas" src="/images/img-home/ultima.jpg">
-                    <div class="infosPeca"> 
-                        <p class="linha1"> JAQUETA MENINO </p>
-                        <p class="linha2"> JAQUETA ADVENTURE - DENGOS E CIA </p>
-                        <br>
-                        <br>
-                        <strong class="preco"> R$ 29,90 </strong>
-                    </div>
-                </article>
+                <% for (let produto of todosProdutos) {%>
+                    <article class="banner">
+                        <a href="/produtos/<%= produto.id%>" class="linksroupas">
+                            <img class="fotosPecas" src="<%= produto.imagem %>">
+                            <div class="infosPeca">
+                                <p class="linha1"> JAQUETA MENINO </p>
+                                <p class="linha2">
+                                    <%= produto.nome_produto %>
+                                </p>
+                                <br>
+                                <br>
+                                <strong class="preco"> R$ <%= produto.preco %> </strong>
+                            </div>
+                        </a>
+                    </article>
+                    <% } %>
             </section>
             <section class="caixa-quadro">
                 <img class="quadro" src="/images/img-home/insta 1.png">
@@ -88,6 +56,7 @@
         </main>
 
         <%- include("./partials/footer") %>
-        
+
 </body>
+
 </html>

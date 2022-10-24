@@ -13,23 +13,23 @@
     <%- include("./partials/headerLogado") %>
         <main>
             <section class="titulo-carrinho">
-                <h1>MEU CARRINHO</h1>
+                <h1> MEU CARRINHO </h1>
             </section>
             <section class="produtosCarrinho">
                 <div class="imagemProduto">
-                    <img id="imagemProduto" src='/produto2.jpg'>
+                    <img id="imagemProduto" src='<%= imagem %>'>
                 </div>
                 <div class="descricaoProduto">
-                    <p>Camiseta </p>
+                    <h3>
+                        <%= nome_produto %>
+                    </h3>
                     <br>
-                    <h3> Quantidade </h3>
-                    <p> 0 </p>
-                    <br>
-                    <h3>Tamanho</h3>
-                    <p> M </p>
+                    <h5> Tamanho </h5>
+                    <p> P </p>
                 </div>
                 <div class="precoProduto">
-                    <p> R$ 00,00 </p>
+                    <p> R$ <%= preco %>
+                    </p>
                 </div>
             </section>
             <div class="botoes">
@@ -41,7 +41,8 @@
             <section class="valorPedido">
                 <article class="valorDoPedido">
                     <div class="totalDoPedido">
-                        <h2>TOTAL: R$ 00,00</h2>
+                        <h3> TOTAL: R$ <%= preco %>
+                        </h3>
                     </div>
                     <a href="/checkout"> <button type="button"> FINALIZAR PEDIDO </button></a>
                 </article>

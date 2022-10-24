@@ -5,9 +5,10 @@
 }
 .cabecalho{
     display:flex;
-    background-color: rgb(223, 210, 67);
+    background-color: white;
     justify-content: space-around;
     align-items: center;
     height: 80px;
     width: 100%;
+    border-bottom: 2px solid grey;
 }

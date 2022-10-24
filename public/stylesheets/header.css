@@ -10,15 +10,15 @@
 
 .cabecalho{
     display:flex;
-    background-color: rgb(223, 210, 67);
-    /* background-color: rgb(255, 167, 94); */
+    background-color: white;
     justify-content: space-around;
     align-items: center;
     height: 80px;
     width: 100%;
-    font-family: 'Fredoka One', cursive;
-    /* font-family: 'Oswald', sans-serif; */
+    border-bottom: 2px solid gray;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    text-shadow: gray 1px 1px 2px;
 }
 .login{
     display: flex;
@@ -28,14 +28,14 @@
 }
 .login2{
     text-decoration: none;
-    color: blue
+    color: rgba(130, 130, 130, 1)
 }
 .compras{
     display: flex;
     justify-content: center;
     font-size: 14px;
     text-decoration: none;
-    color: green;
+    color: rgba(130, 130, 130, 1)
     
 }
 .lupa{
@@ -44,5 +44,5 @@
 }
 #link{
     text-decoration: none;
-    color:orangered;
+    color:rgba(130, 130, 130, 1)
 }

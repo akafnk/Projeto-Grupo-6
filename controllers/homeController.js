@@ -1,7 +1,12 @@
+const { sequelize, Produto } = require("../models")
+
 const homeController = {
-    home : (req,res)=>{
-        res.render("home")
+    home : async (req,res)=>{
+        const todosProdutos = await Produto.findAll({limit: 5})
+        res.render("home", {todosProdutos: todosProdutos})
     }
+
+    
 }
 
 

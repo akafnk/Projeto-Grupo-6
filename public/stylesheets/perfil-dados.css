@@ -10,13 +10,15 @@
 body{
     min-height: 100vh;
     min-width: 100vw;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
 .boxPrincipal{
     display: flex;
     width: 100%;
-    height: 400px;
+    height: auto;
     margin-bottom: 50px;
+    margin-top: 15px;
 }
 
 .boxInformacoes {
@@ -35,7 +37,7 @@ body{
 }
 
 .inputForm {
-    width: 100%;
+    width: 60%;
     margin-left: 30px;
 }
 
@@ -49,7 +51,7 @@ h2{
 }
 
 .caixaInfos{
-    margin-top: 40px;
+    margin-top: 100px;
     padding: 5px;
     margin-left: 30px;
     width: 50%;
@@ -63,7 +65,7 @@ h2{
 }
 .botaoCadastro{
     padding: 7px;
-    background-color: rgb(80, 159, 80);
+    background-color: rgb(93, 120, 255);
     color: black;
     border: none;
     border-radius: 5px;
@@ -71,14 +73,15 @@ h2{
     font-size: 15px;
     height: 40px;
     width: 30%;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     justify-content: center;
     text-align: center;
     margin-left: 15%;
+    margin-top: 15px;
 }
 
 .botaoCadastro:hover{
-    background-color: rgb(108, 189, 108);
+    background-color: rgb(103, 128, 255);
 }
 
 .botaoDeletar {
@@ -91,7 +94,7 @@ h2{
     font-size: 15px;
     height: 40px;
     width: 30%;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     justify-content: center;
     text-align: center;
     margin-left: 15%;
@@ -101,7 +104,7 @@ h2{
     background-color: rgb(255, 94, 94);
 }
 .formedit{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .inputDados{
     padding: 5px;
@@ -121,7 +124,7 @@ h2{
 .botao {
     margin-top: 10px;
     padding: 7px;
-    background-color: orange;
+    background-color: rgb(93, 120, 255);
     color: black;
     cursor: pointer;
     font-size: 15px;
@@ -131,7 +134,7 @@ h2{
 }
 
 .botao:hover{
-    background: rgb(255, 224, 166);
+    background-color: rgb(103, 128, 255);
 }
 
 
