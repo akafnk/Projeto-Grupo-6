@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,67 @@
     <link href="/stylesheets/paginaperfil.css" rel="stylesheet">
     <title>PERFIL</title>
 </head>
+
 <body>
 
     <%- include("./partials/headerLogado") %>
 
-    <div class="boxPrincipal"> 
-        <div class="caixaBotoes">
-            <h2> Olá, <%= nome %> </h2>
-            <br>
-            <div class="caixaPerfil"> 
-                <button class="botao"> <a class="link"> PERFIL DO USUÁRIO </a> </button>
-            </div>
-            <div class="caixaEditar">
-                <button class="botao"> <a href="editar/<%= id %>" class="link"> EDITAR DADOS </a> </button>
-            </div>
-            <div class="caixaSair">
-                <button class="botao"><a href="/logout" class="link"> SAIR </a> </button>
-            </div>
-        </div>
-        <div class="caixaInfos">
-            <div>
-                <h2> INFORMAÇÕES DA CONTA </h2>
+        <div class="boxPrincipal">
+            <div class="caixaBotoes">
                 <br>
-                <div class="boxInformacoes">
-                    <form>
-                        <div class="identificacao">
-                            <div class="labelForm"><label for="nome"> NOME: </label></div>
-                            <div class="inputForm"><input class="inputDados" type="text" name="nome" id="nome" placeholder="<%= nome %>" > </div>
-                        </div>
-                        <br>
-                        <div class="identificacao">
-                            <div class="labelForm"> <label for="sobrenome"> SOBRENOME: </label> </div>
-                            <div class="inputForm"> <input class="inputDados" type="text" name="sobrenome" id="sobrenome" placeholder="<%= sobrenome %>"> </div>
-                        </div>
-                        <br>
-                        <div class="identificacao">
-                            <div class="labelForm"><label for="telefone"> TELEFONE: </label> </div>
-                            <div class="inputForm"> <input class="inputDados" type="tel" name="telefone" id="telefone" placeholder="<%= telefone %>"> </div>
-                        </div>
-                        <br>
-                        <div class="identificacao">
-                            <div class="labelForm"><label for="email"> E-MAIL : </label> </div>
-                            <div class="inputForm"> <input class="inputDados" type="email" name="email" id="email" placeholder="<%= email %>"> </div>
-                        </div>
-                        <br>
-                        <div class="identificacao">
-                            <div class="labelForm"><label for="senha"> SENHA: </label> </div>
-                            <div class="inputForm"> <input class="inputDados" type="password" name="senha" id="senha" placeholder="********"> </div>
-                        </div>
+            <h2> Olá, <%= nome %></h2>
+                <br>
+                <div class="caixas">
+                    <button class="botao"> <a class="link"> PERFIL DO USUÁRIO </a> </button>
+                </div>
+                <div class="caixas">
+                    <button class="botao"> <a href="editar/<%= id %>" class="link"> EDITAR DADOS </a> </button>
+                </div>
+                <div class="caixas">
+                    <button class="botao"><a href="/logout" class="link"> SAIR </a> </button>
+                </div>
+            </div>
+            <div class="caixaInfos">
+                <div>           
+                    <br>
+                    <h2> INFORMAÇÕES DA CONTA </h2>
+                    <div class="boxInformacoes">
+                        <form>
+                            <div class="identificacao">
+                                <div class="labelForm"><label for="nome"> NOME: </label></div>
+                                <div class="inputForm"><input class="inputDados" type="text" name="nome" id="nome"
+                                        placeholder="<%= nome %>"> </div>
+                            </div>
+                            <br>
+                            <div class="identificacao">
+                                <div class="labelForm"> <label for="sobrenome"> SOBRENOME: </label> </div>
+                                <div class="inputForm"> <input class="inputDados" type="text" name="sobrenome"
+                                        id="sobrenome" placeholder="<%= sobrenome %>"> </div>
+                            </div>
+                            <br>
+                            <div class="identificacao">
+                                <div class="labelForm"><label for="telefone"> TELEFONE: </label> </div>
+                                <div class="inputForm"> <input class="inputDados" type="tel" name="telefone"
+                                        id="telefone" placeholder="<%= telefone %>"> </div>
+                            </div>
+                            <br>
+                            <div class="identificacao">
+                                <div class="labelForm"><label for="email"> E-MAIL: </label> </div>
+                                <div class="inputForm"> <input class="inputDados" type="email" name="email" id="email"
+                                        placeholder="<%= email %>"> </div>
+                            </div>
+                            <br>
+                            <div class="identificacao">
+                                <div class="labelForm"><label for="senha"> SENHA: </label> </div>
+                                <div class="inputForm"> <input class="inputDados" type="password" name="senha"
+                                        id="senha" placeholder="********"> </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-</div>
-    <%- include("./partials/footer") %>
+        <%- include("./partials/footer") %>
 </body>
+
 </html>
