@@ -11,15 +11,25 @@
 <body>
     <%- include("./partials/header-mini") %>
     <main class="paginaPrincipal">
-        <h2> PRODUTOS </h2>
+        <h2>  PRODUTOS </h2>
         <section class="caixaProdutos">
-            <div class="linha1">
+            <% for (let produtos of produtosCatalogo) {%>
                 <article>
-                    <img class="fotosPecas" src="/images/img-produtos/blusa montrinho.png" alt="moletom monstrinho">
-                    <h4 class="categoriaPeca">MOLETOM</h4>
-                    <p class="nomePeca"> MOLETOM MONSTRINHO </p>
-                    <strong class="precoPeca">R$ 59,90</strong>
+                    <a class="link "href="/produtos/<%= produtos.id%>">
+                    <img class="fotosPecas" src="<%= produtos.imagem %>" alt="moletom monstrinho">
+                    <div>
+                        <h4 class="categoriaPeca"> <%= produtos.categoria %> </h4>
+                        <p class="nomePeca"> <%= produtos.nome_produto %> </p>
+                        <br>
+                        <strong class="precoPeca"> R$ <%= produtos.preco %></strong>
+                    </div>
+                    </a>
                 </article>
+                <% } %>
+        </section>
+        
+        
+<!--             
                 <article>
                     <img class="fotosPecas" src="/images/img-produtos/produto2.jpg" alt="moletom street">
                     <h4 class="categoriaPeca">MOLETOM</h4>
@@ -66,7 +76,7 @@
                     <strong class="precoPeca">R$ 49,90</strong>
                 </article>
             </div>
-        </section>
+        </section> --> 
     </main>
     
     <%- include("./partials/footer") %>

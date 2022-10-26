@@ -1,4 +1,5 @@
-const {sequelize, Produto }= require('../models/index')
+const {sequelize, Produto }= require('../models/index');
+
 const produtoController = {
     verProduto: async (req, res) =>{
         const id = req.params.id;

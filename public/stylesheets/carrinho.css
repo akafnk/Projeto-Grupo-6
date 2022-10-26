@@ -18,19 +18,22 @@ main{
     width: 100%;
     height: 100px;
     align-items: center;
-    border-bottom: 1px solid rgb(176, 176, 176);
     margin-top: 25px;
+    margin-left: 5%;
 }
 
 .produtosCarrinho{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 80%;
     height: auto;
-    align-items: center;    
+    align-items: center;  
+    margin-top: 35px;  
     margin-bottom: 50px;
     padding-bottom: 20px;
+    border-top: solid 1px grey;
     border-bottom: solid 1px grey;
+    margin-left: 5%;
 }
 
 .selectsCarrinho{
@@ -40,7 +43,7 @@ main{
 }
 
 #imagemProduto{
-    margin-top: 15px;
+    margin-top: 30px;
     width: 100px;
     height: auto;
 }
@@ -53,15 +56,12 @@ main{
     margin-right: 40%;
     font-size: 17px;
 }
-.precoProduto{
-    margin-top: 10%;
-    font-size: 18px;
-    
-}
+
 .botoes{
     display: flex;
     width: 30%;
     justify-content: space-around;  
+    margin-left: 50px;
 }
 
 button{
@@ -93,16 +93,17 @@ button:hover{
     flex-direction: row;
     width: 100%;
     align-items: center;
-    height: 300px;
-    margin-top: 50px;
+    height: auto;
     justify-content: flex-end;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .valorDoPedido{
     display: flex;
     flex-direction: column;    
-    height: 300px;
-    margin-top: 10%;
+    height: auto;
+    margin-right: 15%;
 }
 
 

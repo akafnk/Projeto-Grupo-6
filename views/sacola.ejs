@@ -26,17 +26,18 @@
                     <br>
                     <h5> Tamanho </h5>
                     <p> P </p>
+                    <br>
+                    <h5> Preço </h5>
+                    <p> R$ <%= preco %> </p>
                 </div>
-                <div class="precoProduto">
-                    <p> R$ <%= preco %>
-                    </p>
-                </div>
+                <!-- <div class="precoProduto">
+                </div> -->
             </section>
             <div class="botoes">
-                <form action="/esvazia-carrinho" method="POST">
-                    <button type="submit">ESVAZIAR CARRINHO</button>
+                <form action="/esvaziar-sacola" method="post"> 
+                    <button type="submit"> ESVAZIAR CARRINHO </button> 
                 </form>
-                <a href="/produtos"> <button type="button"> CONTINUAR COMPRANDO </button> </a>
+                <a href="/catalogo"> <button type="button"> CONTINUAR COMPRANDO </button> </a>
             </div>
             <section class="valorPedido">
                 <article class="valorDoPedido">
@@ -44,7 +45,7 @@
                         <h3> TOTAL: R$ <%= preco %>
                         </h3>
                     </div>
-                    <a href="/checkout"> <button type="button"> FINALIZAR PEDIDO </button></a>
+                    <a href="/pagamento"> <button type="button"> FINALIZAR PEDIDO </button></a>
                 </article>
             </section>
         </main>

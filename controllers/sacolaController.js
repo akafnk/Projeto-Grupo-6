@@ -6,7 +6,7 @@ const sacolaController = {
         const dadosProduto = await Produto.findByPk(idProduto, { raw: true });
         
         if (!dadosProduto) {
-            return res.redirect("home");
+            return res.redirect("catalogo");
         }
         res.render("sacola",  dadosProduto);
 
@@ -19,6 +19,15 @@ const sacolaController = {
         req.session.sacola = id;
         res.redirect("sacola");
 
+    },
+
+    //Esvaziar carrinho
+    
+    limparCarrinho: (req,res) => {
+
+        req.session.sacola = undefined;
+        res.redirect("catalogo");
+    
     }
 
 }

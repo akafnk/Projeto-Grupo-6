@@ -12,67 +12,50 @@
     <div class="containerPai">
         <div class="primeiraColuna">
             <div class="dadosEndereco">
-                <h3> <b> ENDEREÇO PARA ENTREGA </b> </h3>
+                <h3> <b> 1- ENDEREÇO PARA ENTREGA </b> </h3>
                     <hr>
                     <br>
                     <form>
                         <div class="dadosForms">
                         <label for="cep"> CEP: *</label>
-                        <input class="inputDados" type="number" name="cep" id="cep" required>
+                        <input class="inputDados" type="number" name="cep" id="cep">
                         </div>
                         <br>
                         <div class="dadosForms">
                         <label for="endereco"> Endereço: *</label>
-                        <input class="inputDados" type="text" name="endereco" id="endereco" required>
+                        <input class="inputDados" type="text" name="endereco" id="endereco">
                         </div>
                         <br>
                         <div class="dadosForms">
                         <label for="numero"> Número: *</label>
-                        <input class="inputDados" type="number" name="numero" id="numero" required>
+                        <input class="inputDados" type="number" name="numero" id="numero">
                         </div>
                         <br>
                         <div class="dadosForms">
-                        <label for="complemento"> Complemento: *</label>
-                        <input class="inputDados" type="text" name="complemento" id="complemento" required>
+                        <label for="complemento"> Complemento: </label>
+                        <input class="inputDados" type="text" name="complemento" id="complemento">
                         </div>
                         <br>
                         <div class="dadosForms">
-                        <label for="referencia"> Referência: *</label>
-                        <input class="inputDados" type="text" name="referencia" id="referencia" required>
+                        <label for="referencia"> Referência: </label>
+                        <input class="inputDados" type="text" name="referencia" id="referencia">
                         </div>
                         <br>
                         <div class="dadosForms">
                         <label for="cidade"> Cidade: *</label>
-                        <input class="inputDados" type="text" name="cidade" id="cidade" required>
+                        <input class="inputDados" type="text" name="cidade" id="cidade">
                         </div>
                         <br>
                         <div class="dadosForms">
                         <label for="estado"> Estado: *</label>
-                        <input class="inputDados" type="text" name="estado" id="estado" required>
+                        <input class="inputDados" type="text" name="estado" id="estado">
                         </div>
                     </form>
             </div>
         </div>
         <div class="segundaColuna">
-            <div class="opcoesDeEntrega">
-                <h3> <b> OPÇÕES DE ENTREGA: </b></h3>
-                    <hr>
-                    <br>
-                    
-                    <form>
-                        <label for="sedex"> SEDEX </label>
-                        <input type="radio" name="frete" id="sedex" value="">
-                        <p> Entrega de 2 a 5 dias úteis </p>
-                        <br>
-                        <hr>
-                        <br>
-                        <label for="retirada"> RETIRAR NA LOJA </label>
-                        <input type="radio" name="frete" id="retirada">
-                        <p> Retirar na loja - 4 dias úteis </p>
-                    </form>
-            </div>
             <div class="dadosPagamento">
-                <h3> <b> OPÇÕES DE PAGAMENTO </b></h3>
+                <h3> <b> 2- OPÇÕES DE PAGAMENTO </b></h3>
                     <hr>
                     <br>
                     <form>
@@ -81,27 +64,27 @@
                         <br><br>
                             <div class="dadosForms">
                             <label for="cartao"> Número: * </label>
-                            <input class="inputDados" type="number" name="cartao" id="cartao" required>
+                            <input class="inputDados" type="number" name="cartao" id="cartao">
                             </div>
                             <br>
                             <div class="dadosForms">
                             <label for="validade"> Validade: *</label>
-                            <input class="inputDados" type="number" name="validade" id="validade" required>
+                            <input class="inputDados" type="number" name="validade" id="validade">
                             </div>
                             <br>
                             <div class="dadosForms">
                             <label for="cvv">CVV: *</label>
-                            <input class="inputDados" type="number" name="cvv" id="cvv" required>
+                            <input class="inputDados" type="number" name="cvv" id="cvv">
                             </div>
                             <br>
                             <div class="dadosForms">
                             <label for="titular"> Titular *</label>
-                            <input class="inputDados" type="text" name="titular" id="titular" required>
+                            <input class="inputDados" type="text" name="titular" id="titular">
                             </div>
                             <br>
                             <div class="dadosForms">
                             <label for="cpftitular">CPF: * </label>
-                            <input class="inputDados" type="number" name="cpftitular" id="cpftitular" required>
+                            <input class="inputDados" type="number" name="cpftitular" id="cpftitular">
                             </div>
                             <br>
                             <label for="sedex"> BOLETO BANCÁRIO </label>
@@ -111,16 +94,16 @@
         </div>
         <div class="terceiraColuna">
             <div class="resumoDaCompra">
-                <h3> <b> RESUMO DO PEDIDO </b></h3>
+                <h3> <b> 3- RESUMO DO PEDIDO </b></h3>
                     <hr>
                     <br>
                     <div class="detalhesDoPedido">
                         <div>
-                        <img width="80px" src="/images/imgCatalogo/5.jpg">
+                        <img width="80px" src="<%= imagem %>">
                         </div>
                         <div>
-                        <a>Blusão sublimado urban - Brava </a>
-                        <p> R$ 50,00</p>
+                        <a> <%= nome_produto %> </a>
+                        <p> R$ <%= preco %> </p>
                         </div>
                     </div>
                     <br>
@@ -132,7 +115,7 @@
                             <br>
                             <div class="valorDoPedido"> 
                             <p> VALOR DO PEDIDO: </p>
-                            <p> R$ 50,00 </p> 
+                            <p> R$ <%= preco %> </p> 
                             </div>
                             <div class="valorDoFrete"> 
                             <p> FRETE: </p>
@@ -140,13 +123,15 @@
                             </div>
                             <div class="valorTotal"> 
                             <p> <b>VALOR TOTAL: </b></p>
-                            <p> R$ 50,00 </p>
+                            <p> <b> R$ <%= preco %> </b> </p>
                             </div>
                         <br>
                         <hr>
                         <br>
                         <div class="divBotao">
-                        <button class="botaoFinalizar" type="submit"> <b> FINALIZAR COMPRA</b> </button>
+                            <button class="botaoFinalizar" type="submit">
+                                <a class="linkFinalizar" href="/home"> FINALIZAR COMPRA </a>
+                            </button> 
                         </div>
                     </form>
             </div>

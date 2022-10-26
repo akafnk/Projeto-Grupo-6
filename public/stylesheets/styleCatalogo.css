@@ -3,7 +3,7 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   font-family: Oswald;
+   font-family: 'Roboto', sans-serif;
 }
 
 .paginaPrincipal{
@@ -15,18 +15,16 @@ h2 {
    width: 80%;
    height: 100px;
    align-items: center;
-   border-bottom: 3px solid #D9D9D9;
    margin: 40px ;
 }
 
 .caixaProdutos {
-   width: 75%;
-   margin: 90px;
-}
-
-.linha1, .linha2 {
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
+   width: 75%;
+   margin-left: 70px;
+   margin-bottom: 70px;
 }
 
 .fotosPecas {
@@ -47,11 +45,15 @@ h2 {
 
 }
 
-section article {
-   margin-bottom: 10px;
+article {
+   margin-bottom: 50px;
 }
 
 .precoPeca {
    font-size: 16px;
+   color: black;
+}
 
+.link{
+   text-decoration: none;
 }

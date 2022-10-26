@@ -6,5 +6,6 @@ const ValidarLogin = require("../middlewares/validarLogin")
 
 router.get("/sacola", ValidarLogin, sacolaController.sacolaProdutos)
 router.post("/sacola", sacolaController.adicionarProduto);
+router.post("/esvaziar-sacola", sacolaController.limparCarrinho);
 
 module.exports= router

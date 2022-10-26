@@ -22,6 +22,7 @@
    color: rgba(130, 130, 130, 1);
    font-size: 9px;
    list-style: none;
+   margin-left: 10px;
 }
 
 .tex {
@@ -73,8 +74,14 @@
 }
 
 .logo-redes {
+   width: 300px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-top: 20px
+   margin-top: 20px;
+}
+
+.imagensSociais {
+   margin-left: 100px;
+   padding: 10px;
 }

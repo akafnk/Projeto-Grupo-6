@@ -1,4 +1,4 @@
-const { sequelize, Usuario } = require("../models/index")
+const { sequelize, Usuario } = require("../models/index");
 
 const perfilController = {
 
@@ -19,8 +19,10 @@ const perfilController = {
         const { id } = req.params;
         
         const update = await Usuario.update({
-            attributes: ["nome"],
+            attributes: ["nome", "sobrenome", "telefone"],
             nome: req.body.nome,
+            sobrenome: req.body.sobrenome,
+            telefone: req.body.telefone,
         },
             {
                 where: {
