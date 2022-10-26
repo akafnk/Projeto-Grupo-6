@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/stylesheets/home.css">
     <title>Mundo Infantil</title>
 </head>
+
 <body>
 
     <%- include("./partials/header") %>
 
         <main>
-            <div>
-                <div class="texto-banner">
-                    <p>NOVIDADES QUENTINHAS</p>
-                    <p>DE INVERNO</p>
+
+            <%- include("./partials/banner") %>
+                <br>
+                <div class="subtitulo">
+                    <h3> NOVIDADES </h3>
                 </div>
-                <a href="catalogo" class="botao-banner">COMPRE AGORA</a>
-                <img src="/images/img-home/BANNER PRINCIPAL.png" width="100%">
-            </div>
-            <div>
-                <p class="texto-banner">1º VEZ AQUI ?</p>
-                <a href="cadastro" class="botao-banner2">CADASTRE-SE</a>
-                <img class="imag" src="/images/img-home/1 VEZ AQUI.png" width="100%">
-            </div>
-            <br>
-            <div class="subtitulo">
-                <h3> NOVIDADES </h3>
-            </div>
-            <br>
-            <section class="novidades">
-                <% for (let produto of todosProdutos) {%>
-                    <article class="banner">
-                        <a href="/produtos/<%= produto.id%>" class="linksroupas">
-                            <img class="fotosPecas" src="<%= produto.imagem %>">
-                            <div class="infosPeca">
-                                <p class="linha1"> JAQUETA MENINO </p>
-                                <p class="linha2">
-                                    <%= produto.nome_produto %>
-                                </p>
-                                <br>
-                                <br>
-                                <strong class="preco"> R$ <%= produto.preco %> </strong>
-                            </div>
-                        </a>
-                    </article>
-                    <% } %>
-            </section>
-            <section class="caixa-quadro">
-                <img class="quadro" src="/images/img-home/insta 1.png">
-                <img class="quadro" src="/images/img-home/insta 2.png">
-                <img class="quadro" src="/images/img-home/insta.png">
-            </section>
+                <br>
+                <section class="novidades">
+                    <% for (let produto of todosProdutos) {%>
+                        <article class="banner">
+                            <a style="text-decoration:none;color:Black" href="/produtos/<%= produto.id%>"
+                                class="linksroupas">
+                                <img class="fotosPecas" src="<%= produto.imagem %>">
+                                <div class="infosPeca">
+                                    <p class="linha1"> JAQUETA MENINO </p>
+                                    <p class="linha2">
+                                        <%= produto.nome_produto %>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <strong class="preco"> R$ <%= produto.preco %> </strong>
+                                </div>
+                            </a>
+                        </article>
+                        <% } %>
+                </section>
+                <section class="caixa-quadro">
+                    <img class="quadro" src="/images/img-home/insta 1.png">
+                    <img class="quadro" src="/images/img-home/insta 2.png">
+                    <img class="quadro" src="/images/img-home/insta.png">
+                </section>
         </main>
 
         <%- include("./partials/footer") %>

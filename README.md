@@ -33,6 +33,8 @@ do Brasil.
 - Rotas restritas somente após login.
 - Editar os dados do usuário.
 - Deletar o cadatro do usuário.
+- Carrinho Funcionando.
+
 - Logout.
 
 <br>
@@ -44,7 +46,6 @@ do Brasil.
 
 - Uso de APIs externas.
 - React.
-- Carrinho Funcionando.
 - Gerar Pedidos.
 - Realizar Pagamentos 
 
@@ -76,6 +77,7 @@ Bibliotecas:
 - Multer.
 - Sequelize.
 - Express Validator (inativa).
+- BootStrap
 
 <br>
 
@@ -97,7 +99,8 @@ Banco de dados:
 
 <br>
 
-Execute o arquivo com extensão SQL no MySQL Workbench pra criar o banco de dados relacional para ter acesso a todas as funções.
+Execute os arquivos da pasta mundoInfanBD com extensão SQL no MySQL Workbench
+ para criar o banco de dados relacional para ter acesso a todas as funções.
 
 <br>
 

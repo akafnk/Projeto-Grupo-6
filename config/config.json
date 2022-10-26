@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "rafa2004",
+    "password": "root",
     "database": "mundo_infantil",
     "host": "127.0.0.1",
     "dialect": "mysql"
