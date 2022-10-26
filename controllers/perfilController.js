@@ -41,6 +41,8 @@ const perfilController = {
                 id: id
             }
         })
+        req.session.user = {}
+        req.session.isAuth = false
         res.redirect("/login")
     },
 }

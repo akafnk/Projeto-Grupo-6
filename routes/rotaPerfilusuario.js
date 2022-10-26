@@ -8,7 +8,7 @@ router.get("/Perfil/pedidos",ValidarLogin, perfilController.pedidosPerfil);
 
 router.get("/editar/:id", ValidarLogin, perfilController.editar);
 router.put("/editar/:id", ValidarLogin, perfilController.update);
-router.delete("/editar/:id",perfilController.destroy);
+router.delete("/editar/:id", ValidarLogin, perfilController.destroy);
 
 
 module.exports = router ;

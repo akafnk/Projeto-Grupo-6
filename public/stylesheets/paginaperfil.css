@@ -57,12 +57,12 @@ body {
     margin-left: 30px;
 }
 
-h2 {
+h2, h3 {
     padding: 15px;
 }
 
 .boxInformacoes {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 30px;
 }
 
@@ -74,6 +74,7 @@ h2 {
     border: none;
     background-color: white;
     outline: none;
+    border-radius: 5px;
 }
 
 .botao {
@@ -109,6 +110,12 @@ h2 {
 
     h2 {
         color: white;
+        margin-left: 0px;
+    }
+
+    h3 {
+        color: white;
+        margin-left: -30px;
     }
 
     .boxPrincipal {
@@ -142,6 +149,11 @@ h2 {
         margin-top: 20px;
         width: 100%;
         height: auto;
+        margin-left: -10px;
+    }
+
+    .caixaInfos {
+        width: 55%;
     }
 
     .labelForm {
@@ -150,8 +162,12 @@ h2 {
 
     .inputForm {
         width: 100%;
-        margin-left: 0px;
+        margin-left: -5px;
         height: 10px;
+    }
+
+    .inputDados{
+        width: 255px;
     }
 
     .rodape {

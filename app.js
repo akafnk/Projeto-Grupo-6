@@ -16,6 +16,7 @@ const pagamentoRouter = require('./routes/rotaPagamento');
 const loginRouter = require('./routes/rotaLogin');
 const cadastroRouter = require('./routes/rotaCadastro');
 const perfilRouter = require("./routes/rotaPerfilusuario");
+const sucessoRouter = require ("./routes/rotaSucesso");
 const inicioMiddlewares = require("./middlewares/inicio");
 
 var app = express();
@@ -49,6 +50,7 @@ app.use('/', pagamentoRouter);
 app.use('/', loginRouter);
 app.use('/', cadastroRouter);
 app.use("/", perfilRouter);
+app.use('/', sucessoRouter);
 
 
 // catch 404 and forward to error handler

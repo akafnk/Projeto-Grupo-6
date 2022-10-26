@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/stylesheets/sucesso.css">
+    <title> Sucesso </title>
+</head>
+
+<body>
+    <%- include("./partials/header-mini") %>
+    
+    <main>
+        <section class="boxPrincipal">
+            <h1>PARABÉNS!</h1>
+            <br>
+            <h2> Compra efetuada com sucesso </h2>
+            <p> Os detalhes da compra foram encaminhadas por e-mail! </p>
+            <br>
+            <br>
+            <img src="/images/img-home/emoticon.jpeg" alt="pedido-concluido" id="imagemConcluido">
+            <br>
+            <br>
+            <br>
+            <a href="/home"><button id="botaoInicio"> Página Inicial </button></a>       
+        </section>                
+    </main>
+
+    <%- include("./partials/footer") %>
+
+</body>
+
+</html>
